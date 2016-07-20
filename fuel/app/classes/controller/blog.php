@@ -144,6 +144,23 @@ class Controller_Blog extends Controller
         $post = Model_Blog::find_by_slug($slug);
         $data = array();
         
+        if (Input::method() == 'POST')
+        {
+            $comment = Model_Comment::forge(array(
+                'blog_id' => Input::post('blog_id'),                                
+                'content' => Input::post('comment'),                
+            ));
+
+            if ($comment->save())
+            {
+                Session::set_flash('success', 'Comment successfully created.');                
+            }
+            else
+            {
+                Session::set_flash('error', 'Could not save comment.');
+            }
+        }
+        
         $data['blog_item'] = $post;
         
         return Response::forge(View::forge('blog/preview', $data));

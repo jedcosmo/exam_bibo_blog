@@ -98,7 +98,38 @@
         <div class="row">
                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <?php echo $blog_item->content; ?>
-               </div>            
+               </div> 
+               <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <h3>&nbsp;</h3>
+                    <?php 
+                        $success = Session::get_flash('success');
+                        $error = Session::get_flash('error');
+
+                        if( $success ){
+                    ?>
+                            <div class="alert alert-success">
+                                <strong>Success!</strong> <?php echo $success; ?>
+                             </div>
+                    <?php }else if($error){ ?>
+                             <div class="alert alert-danger">
+                                <strong>Warning!</strong> <?php echo $error; ?>
+                             </div>
+                    <?php } ?>
+                    <form action="" method="POST">                
+                        <div class="form-group row">
+                            <label for="content" class="col-sm-2 form-control-label">Comment:</label>
+                            <div class="col-sm-10">
+                                <textarea class="form-control" name="comment" id="comment" rows="3" placeholder="Comment"></textarea>
+                            </div>
+                        </div>           
+                        <input type="hidden" name="blog_id" value="<?php echo $blog_item->id; ?>"/>                
+                        <div class="form-group row">
+                          <div class="col-sm-offset-2 col-sm-10">
+                            <button type="submit" class="btn btn-secondary">Submit</button>
+                          </div>
+                        </div>
+                    </form>
+                </div>
         </div>
     </div>
 
