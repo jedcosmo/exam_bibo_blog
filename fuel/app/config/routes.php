@@ -11,5 +11,5 @@ return array(
         'blog/edit/(:any)' => array( array('GET', new Route('blog/edit/$1')), array('POST', new Route('blog/edit/$1')) ),
         'blog/preview/(:any)' => array( array('GET', new Route('blog/preview/$1')) ),
         'blog/delete/(:any)' => array( array('GET', new Route('blog/delete/$1')) ),
-        'api/(:any)' => array( array('GET', new Route('api/$1')), array('POST', new Route('api')) ),
+        'api/(:any)' => array( array('GET', new Route('api/$1')), array('POST', new Route('api/$1')) ),
 );

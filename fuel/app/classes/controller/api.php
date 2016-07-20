@@ -20,9 +20,18 @@ class Controller_Api extends Controller_Rest{
     public function action_edit(){               
         $blog_item = Model_Blog::find(Input::get('id'));
         
+        if( $blog_item ){            
+            $messsage = 'Blog item successfully found.';
+            $status = 'success';
+        }else{
+            $messsage = 'Could not find blog item.';
+            $status = 'failed';
+        }
+        
         return $this->response(array(
+            'message' => $messsage,
             'blog_item' => $blog_item,
-            'status' => 'success',
+            'status' => $status,
             'empty' => null
         ));
     }
@@ -36,7 +45,7 @@ class Controller_Api extends Controller_Rest{
         if( $blog_item ){
             $blog_item->delete();
             $messsage = 'Blog item successfully deleted.';
-            $status = 'failed';
+            $status = 'success';
         }else{
             $messsage = 'Could not delete blog item.';
             $status = 'failed';
