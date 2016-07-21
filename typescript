@@ -1,0 +1,441 @@
+Script started on Thu 21 Jul 2016 10:03:28 AM EDT
+[root@localhost ~]# ls[K[Ksudo yi[Kum install httpd
+Loaded plugins: fastestmirror
+Setting up Install Process
+Loading mirror speeds from cached hostfile
+ * base: mirror.tadu.vn
+ * extras: centos-hcm.viettelidc.com.vn
+ * updates: centos-hcm.viettelidc.com.vn
+Resolving Dependencies
+--> Running transaction check
+---> Package httpd.i686 0:2.2.15-54.el6.centos will be installed
+--> Processing Dependency: httpd-tools = 2.2.15-54.el6.centos for package: httpd-2.2.15-54.el6.centos.i686
+--> Processing Dependency: libaprutil-1.so.0 for package: httpd-2.2.15-54.el6.centos.i686
+--> Processing Dependency: libapr-1.so.0 for package: httpd-2.2.15-54.el6.centos.i686
+--> Processing Dependency: apr-util-ldap for package: httpd-2.2.15-54.el6.centos.i686
+--> Processing Dependency: /etc/mime.types for package: httpd-2.2.15-54.el6.centos.i686
+--> Running transaction check
+---> Package apr.i686 0:1.3.9-5.el6_2 will be installed
+---> Package apr-util.i686 0:1.3.9-3.el6_0.1 will be installed
+---> Package apr-util-ldap.i686 0:1.3.9-3.el6_0.1 will be installed
+---> Package httpd-tools.i686 0:2.2.15-54.el6.centos will be installed
+---> Package mailcap.noarch 0:2.1.31-2.el6 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package            Arch        Version                      Repository    Size
+================================================================================
+Installing:
+ httpd              i686        2.2.15-54.el6.centos         updates      833 k
+Installing for dependencies:
+ apr                i686        1.3.9-5.el6_2                base         129 k
+ apr-util           i686        1.3.9-3.el6_0.1              base          89 k
+ apr-util-ldap      i686        1.3.9-3.el6_0.1              base          15 k
+ httpd-tools        i686        2.2.15-54.el6.centos         updates       79 k
+ mailcap            noarch      2.1.31-2.el6                 base          27 k
+
+Transaction Summary
+================================================================================
+Install       6 Package(s)
+
+Total download size: 1.1 M
+Installed size: 3.5 M
+Is this ok [y/N]: y
+Downloading Packages:
+(1/6): apr-1.3.9-5.el6 (4%) 40% [=====        ]  0.0 B/s |  52 kB     --:-- ETA (1/6): apr-1.3.9-5.el6_2.i686.rpm                        | 129 kB     00:00     
+(2/6): apr-util-1.3.9-3.el6_0.1.i686.rpm                 |  89 kB     00:00     
+(3/6): apr-util-ldap-1.3.9-3.el6_0.1.i686.rpm            |  15 kB     00:00     
+(4/6): httpd-2.2.15-54 (24%)  6% [-           ]  0.0 B/s |  57 kB     --:-- ETA (4/6): httpd-2.2.15-54 (31%) 15% [=-          ] 122 kB/s | 131 kB     00:05 ETA (4/6): httpd-2.2.15-54 (39%) 27% [===         ] 134 kB/s | 228 kB     00:04 ETA (4/6): httpd-2.2.15-54 (45%) 36% [====        ] 141 kB/s | 301 kB     00:03 ETA (4/6): httpd-2.2.15-54 (51%) 44% [=====       ] 147 kB/s | 373 kB     00:03 ETA (4/6): httpd-2.2.15-54 (57%) 53% [======      ] 152 kB/s | 446 kB     00:02 ETA (4/6): httpd-2.2.15-54 (64%) 62% [=======     ] 157 kB/s | 519 kB     00:01 ETA (4/6): httpd-2.2.15-54 (65%) 64% [=======-    ] 148 kB/s | 539 kB     00:01 ETA (4/6): httpd-2.2.15-54 (78%) 83% [=========-  ] 170 kB/s | 691 kB     00:00 ETA (4/6): httpd-2.2.15-54 (85%) 91% [=========== ] 174 kB/s | 765 kB     00:00 ETA (4/6): httpd-2.2.15-54.el6.centos.i686.rpm               | 833 kB     00:03     
+(5/6): httpd-tools-2.2.15-54.el6.centos.i686.rpm         |  79 kB     00:00     
+(6/6): mailcap-2.1.31-2.el6.noarch.rpm                   |  27 kB     00:00     
+--------------------------------------------------------------------------------
+Total                                           201 kB/s | 1.1 MB     00:05     
+Running rpm_check_debug
+Running Transaction Test
+Transaction Test Succeeded
+Running Transaction
+  Installing : apr-1.3.9-5.el6_2.i686 [                                   ] 1/6  Installing : apr-1.3.9-5.el6_2.i686 [#######                            ] 1/6  Installing : apr-1.3.9-5.el6_2.i686 [##############                     ] 1/6  Installing : apr-1.3.9-5.el6_2.i686 [#####################              ] 1/6  Installing : apr-1.3.9-5.el6_2.i686 [############################       ] 1/6  Installing : apr-1.3.9-5.el6_2.i686 [################################   ] 1/6  Installing : apr-1.3.9-5.el6_2.i686 [################################## ] 1/6  Installing : apr-1.3.9-5.el6_2.i686                                       1/6 
+  Installing : mailcap-2.1.31-2.el6.noarch [                              ] 2/6  Installing : mailcap-2.1.31-2.el6.noarch [########################      ] 2/6  Installing : mailcap-2.1.31-2.el6.noarch [#########################     ] 2/6  Installing : mailcap-2.1.31-2.el6.noarch [###########################   ] 2/6  Installing : mailcap-2.1.31-2.el6.noarch [############################# ] 2/6  Installing : mailcap-2.1.31-2.el6.noarch                                  2/6 
+  Installing : apr-util-1.3.9-3.el6_0.1.i68 [                             ] 3/6  Installing : apr-util-1.3.9-3.el6_0.1.i68 [#########                    ] 3/6  Installing : apr-util-1.3.9-3.el6_0.1.i68 [##################           ] 3/6  Installing : apr-util-1.3.9-3.el6_0.1.i68 [####################         ] 3/6  Installing : apr-util-1.3.9-3.el6_0.1.i68 [#########################    ] 3/6  Installing : apr-util-1.3.9-3.el6_0.1.i68 [############################ ] 3/6  Installing : apr-util-1.3.9-3.el6_0.1.i686                                3/6 
+  Installing : apr-util-ldap-1.3.9-3.el6_0. [###########################  ] 4/6  Installing : apr-util-ldap-1.3.9-3.el6_0. [############################ ] 4/6  Installing : apr-util-ldap-1.3.9-3.el6_0.1.i686                           4/6 
+  Installing : httpd-tools-2.2.15-54.el6.ce [###########                  ] 5/6  Installing : httpd-tools-2.2.15-54.el6.ce [#############                ] 5/6  Installing : httpd-tools-2.2.15-54.el6.ce [###############              ] 5/6  Installing : httpd-tools-2.2.15-54.el6.ce [##################           ] 5/6  Installing : httpd-tools-2.2.15-54.el6.ce [####################         ] 5/6  Installing : httpd-tools-2.2.15-54.el6.ce [##########################   ] 5/6  Installing : httpd-tools-2.2.15-54.el6.ce [###########################  ] 5/6  Installing : httpd-tools-2.2.15-54.el6.ce [############################ ] 5/6  Installing : httpd-tools-2.2.15-54.el6.centos.i686                        5/6 
+  Installing : httpd-2.2.15-54.el6.centos.i [                             ] 6/6  Installing : httpd-2.2.15-54.el6.centos.i [#                            ] 6/6  Installing : httpd-2.2.15-54.el6.centos.i [##                           ] 6/6  Installing : httpd-2.2.15-54.el6.centos.i [###                          ] 6/6  Installing : httpd-2.2.15-54.el6.centos.i [####                         ] 6/6  Installing : httpd-2.2.15-54.el6.centos.i [#####                        ] 6/6  Installing : httpd-2.2.15-54.el6.centos.i [######                       ] 6/6  Installing : httpd-2.2.15-54.el6.centos.i [#######                      ] 6/6  Installing : httpd-2.2.15-54.el6.centos.i [########                     ] 6/6  Installing : httpd-2.2.15-54.el6.centos.i [#########                    ] 6/6  Installing : httpd-2.2.15-54.el6.centos.i [##########                   ] 6/6  Installing : httpd-2.2.15-54.el6.centos.i [###########                  ] 6/6  Installing : httpd-2.2.15-54.el6.centos.i [############                 ] 6/6  Installing : httpd-2.2.15-54.el6.centos.i [#############                ] 6/6  Installing : httpd-2.2.15-54.el6.centos.i [##############               ] 6/6  Installing : httpd-2.2.15-54.el6.centos.i [###############              ] 6/6  Installing : httpd-2.2.15-54.el6.centos.i [################             ] 6/6  Installing : httpd-2.2.15-54.el6.centos.i [#################            ] 6/6  Installing : httpd-2.2.15-54.el6.centos.i [##################           ] 6/6  Installing : httpd-2.2.15-54.el6.centos.i [###################          ] 6/6  Installing : httpd-2.2.15-54.el6.centos.i [####################         ] 6/6  Installing : httpd-2.2.15-54.el6.centos.i [#####################        ] 6/6  Installing : httpd-2.2.15-54.el6.centos.i [######################       ] 6/6  Installing : httpd-2.2.15-54.el6.centos.i [#######################      ] 6/6  Installing : httpd-2.2.15-54.el6.centos.i [########################     ] 6/6  Installing : httpd-2.2.15-54.el6.centos.i [#########################    ] 6/6  Installing : httpd-2.2.15-54.el6.centos.i [##########################   ] 6/6  Installing : httpd-2.2.15-54.el6.centos.i [###########################  ] 6/6  Installing : httpd-2.2.15-54.el6.centos.i [############################ ] 6/6  Installing : httpd-2.2.15-54.el6.centos.i686                              6/6 
+  Verifying  : apr-util-1.3.9-3.el6_0.1.i686                                1/6 
+  Verifying  : apr-1.3.9-5.el6_2.i686                                       2/6 
+  Verifying  : apr-util-ldap-1.3.9-3.el6_0.1.i686                           3/6 
+  Verifying  : httpd-2.2.15-54.el6.centos.i686                              4/6 
+  Verifying  : httpd-tools-2.2.15-54.el6.centos.i686                        5/6 
+  Verifying  : mailcap-2.1.31-2.el6.noarch                                  6/6 
+
+Installed:
+  httpd.i686 0:2.2.15-54.el6.centos                                             
+
+Dependency Installed:
+  apr.i686 0:1.3.9-5.el6_2              apr-util.i686 0:1.3.9-3.el6_0.1         
+  apr-util-ldap.i686 0:1.3.9-3.el6_0.1  httpd-tools.i686 0:2.2.15-54.el6.centos 
+  mailcap.noarch 0:2.1.31-2.el6        
+
+Complete!
+[root@localhost ~]# sudo service start [K[K[K[K[K[Khttpd start
+Starting httpd: httpd: Could not reliably determine the server's fully qualified domain name, using localhost.localdomain for ServerName
+[60G[[0;32m  OK  [0;39m]
+[root@localhost ~]# ifconfig eth0 | grep inet | awk '{prin[K[K[K[K ptin[K[K[Krint $2 }'
+addr:10.0.2.15
+addr:
+[root@localhost ~]# sudo yum install myq[Ksql-server
+Loaded plugins: fastestmirror
+Setting up Install Process
+Loading mirror speeds from cached hostfile
+ * base: mirror.tadu.vn
+ * extras: mirror.rise.ph
+ * updates: mirror.rise.ph
+Resolving Dependencies
+--> Running transaction check
+---> Package mysql-server.i686 0:5.1.73-7.el6 will be installed
+--> Processing Dependency: mysql = 5.1.73-7.el6 for package: mysql-server-5.1.73-7.el6.i686
+--> Processing Dependency: perl-DBI for package: mysql-server-5.1.73-7.el6.i686
+--> Processing Dependency: perl-DBD-MySQL for package: mysql-server-5.1.73-7.el6.i686
+--> Processing Dependency: perl(vars) for package: mysql-server-5.1.73-7.el6.i686
+--> Processing Dependency: perl(strict) for package: mysql-server-5.1.73-7.el6.i686
+--> Processing Dependency: perl(Sys::Hostname) for package: mysql-server-5.1.73-7.el6.i686
+--> Processing Dependency: perl(POSIX) for package: mysql-server-5.1.73-7.el6.i686
+--> Processing Dependency: perl(Getopt::Long) for package: mysql-server-5.1.73-7.el6.i686
+--> Processing Dependency: perl(File::Temp) for package: mysql-server-5.1.73-7.el6.i686
+--> Processing Dependency: perl(File::Path) for package: mysql-server-5.1.73-7.el6.i686
+--> Processing Dependency: perl(File::Copy) for package: mysql-server-5.1.73-7.el6.i686
+--> Processing Dependency: perl(File::Basename) for package: mysql-server-5.1.73-7.el6.i686
+--> Processing Dependency: perl(Data::Dumper) for package: mysql-server-5.1.73-7.el6.i686
+--> Processing Dependency: perl(DBI) for package: mysql-server-5.1.73-7.el6.i686
+--> Processing Dependency: /usr/bin/perl for package: mysql-server-5.1.73-7.el6.i686
+--> Running transaction check
+---> Package mysql.i686 0:5.1.73-7.el6 will be installed
+---> Package perl.i686 4:5.10.1-141.el6_7.1 will be installed
+--> Processing Dependency: perl-libs = 4:5.10.1-141.el6_7.1 for package: 4:perl-5.10.1-141.el6_7.1.i686
+--> Processing Dependency: perl-libs for package: 4:perl-5.10.1-141.el6_7.1.i686
+--> Processing Dependency: perl(version) for package: 4:perl-5.10.1-141.el6_7.1.i686
+--> Processing Dependency: perl(Pod::Simple) for package: 4:perl-5.10.1-141.el6_7.1.i686
+--> Processing Dependency: perl(Module::Pluggable) for package: 4:perl-5.10.1-141.el6_7.1.i686
+--> Processing Dependency: libperl.so for package: 4:perl-5.10.1-141.el6_7.1.i686
+---> Package perl-DBD-MySQL.i686 0:4.013-3.el6 will be installed
+---> Package perl-DBI.i686 0:1.609-4.el6 will be installed
+--> Running transaction check
+---> Package perl-Module-Pluggable.i686 1:3.90-141.el6_7.1 will be installed
+---> Package perl-Pod-Simple.i686 1:3.13-141.el6_7.1 will be installed
+--> Processing Dependency: perl(Pod::Escapes) >= 1.04 for package: 1:perl-Pod-Simple-3.13-141.el6_7.1.i686
+---> Package perl-libs.i686 4:5.10.1-141.el6_7.1 will be installed
+---> Package perl-version.i686 3:0.77-141.el6_7.1 will be installed
+--> Running transaction check
+---> Package perl-Pod-Escapes.i686 1:1.04-141.el6_7.1 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package                    Arch      Version                   Repository
+                                                                           Size
+================================================================================
+Installing:
+ mysql-server               i686      5.1.73-7.el6              base      8.8 M
+Installing for dependencies:
+ mysql                      i686      5.1.73-7.el6              base      904 k
+ perl                       i686      4:5.10.1-141.el6_7.1      base      9.7 M
+ perl-DBD-MySQL             i686      4.013-3.el6               base      134 k
+ perl-DBI                   i686      1.609-4.el6               base      705 k
+ perl-Module-Pluggable      i686      1:3.90-141.el6_7.1        base       40 k
+ perl-Pod-Escapes           i686      1:1.04-141.el6_7.1        base       33 k
+ perl-Pod-Simple            i686      1:3.13-141.el6_7.1        base      213 k
+ perl-libs                  i686      4:5.10.1-141.el6_7.1      base      594 k
+ perl-version               i686      3:0.77-141.el6_7.1        base       52 k
+
+Transaction Summary
+================================================================================
+Install      10 Package(s)
+
+Total download size: 21 M
+Installed size: 59 M
+Is this ok [y/N]: y
+Downloading Packages:
+(1/10): mysql-5.1.73-7 (0%) 12% [=-           ]  0.0 B/s | 115 kB     --:-- ETA (1/10): mysql-5.1.73-7 (0%) 18% [==           ]  62 kB/s | 168 kB     00:11 ETA (1/10): mysql-5.1.73-7 (1%) 35% [====-        ]  88 kB/s | 320 kB     00:06 ETA (1/10): mysql-5.1.73-7 (1%) 43% [=====-       ]  98 kB/s | 394 kB     00:05 ETA (1/10): mysql-5.1.73-7 (2%) 51% [======-      ] 106 kB/s | 467 kB     00:04 ETA (1/10): mysql-5.1.73-7 (2%) 56% [=======      ] 105 kB/s | 507 kB     00:03 ETA (1/10): mysql-5.1.73-7 (3%) 72% [=========    ] 127 kB/s | 651 kB     00:01 ETA (1/10): mysql-5.1.73-7 (3%) 80% [==========   ] 134 kB/s | 724 kB     00:01 ETA (1/10): mysql-5.1.73-7 (3%) 87% [===========  ] 140 kB/s | 795 kB     00:00 ETA (1/10): mysql-5.1.73-7 (4%) 96% [============-] 146 kB/s | 869 kB     00:00 ETA (1/10): mysql-5.1.73-7.el6.i686.rpm                      | 904 kB     00:03     
+(2/10): mysql-server-5 (4%)  1% [             ]  0.0 B/s |  93 kB     --:-- ETA (2/10): mysql-server-5 (4%)  1% [             ] 120 kB/s | 166 kB     01:13 ETA (2/10): mysql-server-5 (5%)  2% [             ] 127 kB/s | 239 kB     01:08 ETA (2/10): mysql-server-5 (5%)  3% [             ] 134 kB/s | 312 kB     01:04 ETA (2/10): mysql-server-5 (5%)  4% [-            ] 140 kB/s | 384 kB     01:01 ETA (2/10): mysql-server-5 (6%)  5% [-            ] 146 kB/s | 457 kB     00:58 ETA (2/10): mysql-server-5 (6%)  5% [-            ] 152 kB/s | 530 kB     00:55 ETA (2/10): mysql-server-5 (6%)  6% [-            ] 157 kB/s | 602 kB     00:53 ETA (2/10): mysql-server-5 (7%)  7% [-            ] 163 kB/s | 677 kB     00:51 ETA (2/10): mysql-server-5 (7%)  8% [=            ] 167 kB/s | 751 kB     00:49 ETA (2/10): mysql-server-5 (7%)  9% [=            ] 172 kB/s | 823 kB     00:47 ETA (2/10): mysql-server-5 (8%)  9% [=            ] 176 kB/s | 896 kB     00:46 ETA (2/10): mysql-server-5 (8%) 10% [=            ] 180 kB/s | 969 kB     00:44 ETA (2/10): mysql-server-5 (8%) 11% [=            ] 169 kB/s | 1.0 MB     00:47 ETA (2/10): mysql-server-5 (9%) 12% [=-           ] 190 kB/s | 1.1 MB     00:41 ETA (2/10): mysql-server-5 (9%) 13% [=-           ] 193 kB/s | 1.2 MB     00:40 ETA (2/10): mysql-server-5 (10%) 14% [=-          ] 196 kB/s | 1.3 MB     00:39 ETA (2/10): mysql-server-5 (10%) 15% [=-          ] 199 kB/s | 1.3 MB     00:38 ETA (2/10): mysql-server-5 (10%) 16% [=-          ] 201 kB/s | 1.4 MB     00:37 ETA (2/10): mysql-server-5 (11%) 16% [==          ] 203 kB/s | 1.5 MB     00:36 ETA (2/10): mysql-server-5 (11%) 17% [==          ] 206 kB/s | 1.6 MB     00:36 ETA (2/10): mysql-server-5 (11%) 17% [==          ] 193 kB/s | 1.6 MB     00:38 ETA (2/10): mysql-server-5 (12%) 19% [==          ] 211 kB/s | 1.7 MB     00:34 ETA (2/10): mysql-server-5 (12%) 20% [==          ] 212 kB/s | 1.8 MB     00:33 ETA (2/10): mysql-server-5 (12%) 21% [==-         ] 214 kB/s | 1.9 MB     00:33 ETA (2/10): mysql-server-5 (13%) 21% [==-         ] 216 kB/s | 1.9 MB     00:32 ETA (2/10): mysql-server-5 (13%) 22% [==-         ] 217 kB/s | 2.0 MB     00:32 ETA (2/10): mysql-server-5 (13%) 23% [==-         ] 218 kB/s | 2.1 MB     00:31 ETA (2/10): mysql-server-5 (14%) 24% [==-         ] 220 kB/s | 2.1 MB     00:31 ETA (2/10): mysql-server-5 (14%) 25% [===         ] 221 kB/s | 2.2 MB     00:30 ETA (2/10): mysql-server-5 (14%) 25% [===         ] 222 kB/s | 2.3 MB     00:30 ETA (2/10): mysql-server-5 (15%) 26% [===         ] 223 kB/s | 2.4 MB     00:29 ETA (2/10): mysql-server-5 (15%) 27% [===         ] 224 kB/s | 2.4 MB     00:29 ETA (2/10): mysql-server-5 (15%) 28% [===         ] 225 kB/s | 2.5 MB     00:28 ETA (2/10): mysql-server-5 (16%) 29% [===-        ] 226 kB/s | 2.6 MB     00:28 ETA (2/10): mysql-server-5 (16%) 30% [===-        ] 227 kB/s | 2.6 MB     00:27 ETA (2/10): mysql-server-5 (17%) 30% [===-        ] 228 kB/s | 2.7 MB     00:27 ETA (2/10): mysql-server-5 (17%) 31% [===-        ] 229 kB/s | 2.8 MB     00:26 ETA (2/10): mysql-server-5 (17%) 32% [===-        ] 229 kB/s | 2.9 MB     00:26 ETA (2/10): mysql-server-5 (18%) 33% [===-        ] 230 kB/s | 2.9 MB     00:26 ETA (2/10): mysql-server-5 (18%) 34% [====        ] 231 kB/s | 3.0 MB     00:25 ETA (2/10): mysql-server-5 (18%) 34% [====        ] 218 kB/s | 3.1 MB     00:26 ETA (2/10): mysql-server-5 (19%) 36% [====        ] 233 kB/s | 3.2 MB     00:24 ETA (2/10): mysql-server-5 (19%) 37% [====        ] 233 kB/s | 3.3 MB     00:24 ETA (2/10): mysql-server-5 (20%) 38% [====-       ] 234 kB/s | 3.3 MB     00:23 ETA (2/10): mysql-server-5 (20%) 38% [====-       ] 234 kB/s | 3.4 MB     00:23 ETA (2/10): mysql-server-5 (20%) 39% [====-       ] 234 kB/s | 3.5 MB     00:23 ETA (2/10): mysql-server-5 (21%) 40% [====-       ] 235 kB/s | 3.6 MB     00:22 ETA (2/10): mysql-server-5 (21%) 40% [====-       ] 221 kB/s | 3.6 MB     00:24 ETA (2/10): mysql-server-5 (21%) 42% [=====       ] 236 kB/s | 3.7 MB     00:21 ETA (2/10): mysql-server-5 (22%) 43% [=====       ] 237 kB/s | 3.8 MB     00:21 ETA (2/10): mysql-server-5 (22%) 44% [=====       ] 237 kB/s | 3.9 MB     00:21 ETA (2/10): mysql-server-5 (22%) 44% [=====       ] 237 kB/s | 3.9 MB     00:20 ETA (2/10): mysql-server-5 (23%) 45% [=====       ] 237 kB/s | 4.0 MB     00:20 ETA (2/10): mysql-server-5 (23%) 46% [=====-      ] 237 kB/s | 4.1 MB     00:20 ETA (2/10): mysql-server-5 (23%) 47% [=====-      ] 238 kB/s | 4.2 MB     00:19 ETA (2/10): mysql-server-5 (24%) 48% [=====-      ] 237 kB/s | 4.2 MB     00:19 ETA (2/10): mysql-server-5 (24%) 48% [=====-      ] 238 kB/s | 4.3 MB     00:19 ETA (2/10): mysql-server-5 (24%) 49% [=====-      ] 238 kB/s | 4.4 MB     00:19 ETA (2/10): mysql-server-5 (25%) 50% [======      ] 238 kB/s | 4.4 MB     00:18 ETA (2/10): mysql-server-5 (25%) 51% [======      ] 238 kB/s | 4.5 MB     00:18 ETA (2/10): mysql-server-5 (25%) 52% [======      ] 238 kB/s | 4.6 MB     00:18 ETA (2/10): mysql-server-5 (26%) 52% [======      ] 238 kB/s | 4.7 MB     00:17 ETA (2/10): mysql-server-5 (26%) 53% [======      ] 238 kB/s | 4.7 MB     00:17 ETA (2/10): mysql-server-5 (26%) 54% [======-     ] 239 kB/s | 4.8 MB     00:17 ETA (2/10): mysql-server-5 (27%) 55% [======-     ] 239 kB/s | 4.9 MB     00:16 ETA (2/10): mysql-server-5 (27%) 56% [======-     ] 239 kB/s | 4.9 MB     00:16 ETA (2/10): mysql-server-5 (27%) 56% [======-     ] 239 kB/s | 5.0 MB     00:16 ETA (2/10): mysql-server-5 (28%) 57% [======-     ] 239 kB/s | 5.1 MB     00:15 ETA (2/10): mysql-server-5 (28%) 58% [======-     ] 225 kB/s | 5.1 MB     00:16 ETA (2/10): mysql-server-5 (29%) 59% [=======     ] 240 kB/s | 5.3 MB     00:15 ETA (2/10): mysql-server-5 (29%) 60% [=======     ] 240 kB/s | 5.3 MB     00:14 ETA (2/10): mysql-server-5 (29%) 61% [=======     ] 240 kB/s | 5.4 MB     00:14 ETA (2/10): mysql-server-5 (30%) 62% [=======     ] 240 kB/s | 5.5 MB     00:14 ETA (2/10): mysql-server-5 (30%) 62% [=======-    ] 240 kB/s | 5.5 MB     00:13 ETA (2/10): mysql-server-5 (30%) 63% [=======-    ] 240 kB/s | 5.6 MB     00:13 ETA (2/10): mysql-server-5 (30%) 63% [=======-    ] 224 kB/s | 5.6 MB     00:14 ETA (2/10): mysql-server-5 (31%) 65% [=======-    ] 241 kB/s | 5.8 MB     00:12 ETA (2/10): mysql-server-5 (31%) 66% [=======-    ] 241 kB/s | 5.8 MB     00:12 ETA (2/10): mysql-server-5 (32%) 67% [========    ] 241 kB/s | 5.9 MB     00:12 ETA (2/10): mysql-server-5 (32%) 68% [========    ] 241 kB/s | 6.0 MB     00:11 ETA (2/10): mysql-server-5 (32%) 68% [========    ] 241 kB/s | 6.1 MB     00:11 ETA (2/10): mysql-server-5 (33%) 69% [========    ] 241 kB/s | 6.1 MB     00:11 ETA (2/10): mysql-server-5 (33%) 70% [========    ] 241 kB/s | 6.2 MB     00:11 ETA (2/10): mysql-server-5 (33%) 71% [========-   ] 241 kB/s | 6.3 MB     00:10 ETA (2/10): mysql-server-5 (34%) 72% [========-   ] 241 kB/s | 6.3 MB     00:10 ETA (2/10): mysql-server-5 (34%) 72% [========-   ] 240 kB/s | 6.4 MB     00:10 ETA (2/10): mysql-server-5 (34%) 73% [========-   ] 240 kB/s | 6.5 MB     00:09 ETA (2/10): mysql-server-5 (35%) 74% [========-   ] 240 kB/s | 6.6 MB     00:09 ETA (2/10): mysql-server-5 (35%) 75% [=========   ] 240 kB/s | 6.6 MB     00:09 ETA (2/10): mysql-server-5 (35%) 76% [=========   ] 240 kB/s | 6.7 MB     00:08 ETA (2/10): mysql-server-5 (36%) 76% [=========   ] 240 kB/s | 6.8 MB     00:08 ETA (2/10): mysql-server-5 (36%) 77% [=========   ] 240 kB/s | 6.8 MB     00:08 ETA (2/10): mysql-server-5 (36%) 78% [=========   ] 240 kB/s | 6.9 MB     00:08 ETA (2/10): mysql-server-5 (37%) 79% [=========-  ] 240 kB/s | 7.0 MB     00:07 ETA (2/10): mysql-server-5 (37%) 80% [=========-  ] 240 kB/s | 7.1 MB     00:07 ETA (2/10): mysql-server-5 (37%) 80% [=========-  ] 240 kB/s | 7.1 MB     00:07 ETA (2/10): mysql-server-5 (38%) 81% [=========-  ] 240 kB/s | 7.2 MB     00:06 ETA (2/10): mysql-server-5 (38%) 82% [=========-  ] 223 kB/s | 7.2 MB     00:07 ETA (2/10): mysql-server-5 (39%) 83% [==========  ] 241 kB/s | 7.4 MB     00:06 ETA (2/10): mysql-server-5 (39%) 84% [==========  ] 241 kB/s | 7.4 MB     00:05 ETA (2/10): mysql-server-5 (39%) 85% [==========  ] 241 kB/s | 7.5 MB     00:05 ETA (2/10): mysql-server-5 (40%) 86% [==========  ] 241 kB/s | 7.6 MB     00:05 ETA (2/10): mysql-server-5 (40%) 87% [==========  ] 241 kB/s | 7.7 MB     00:04 ETA (2/10): mysql-server-5 (40%) 87% [==========- ] 226 kB/s | 7.7 MB     00:04 ETA (2/10): mysql-server-5 (41%) 89% [==========- ] 242 kB/s | 7.8 MB     00:04 ETA (2/10): mysql-server-5 (41%) 89% [==========- ] 242 kB/s | 7.9 MB     00:03 ETA (2/10): mysql-server-5 (41%) 90% [==========- ] 241 kB/s | 8.0 MB     00:03 ETA (2/10): mysql-server-5 (42%) 91% [==========- ] 241 kB/s | 8.1 MB     00:03 ETA (2/10): mysql-server-5 (42%) 92% [=========== ] 241 kB/s | 8.1 MB     00:02 ETA (2/10): mysql-server-5 (42%) 93% [=========== ] 241 kB/s | 8.2 MB     00:02 ETA (2/10): mysql-server-5 (43%) 93% [=========== ] 241 kB/s | 8.3 MB     00:02 ETA (2/10): mysql-server-5 (43%) 94% [=========== ] 241 kB/s | 8.3 MB     00:01 ETA (2/10): mysql-server-5 (43%) 95% [=========== ] 241 kB/s | 8.4 MB     00:01 ETA (2/10): mysql-server-5 (44%) 96% [===========-] 241 kB/s | 8.5 MB     00:01 ETA (2/10): mysql-server-5 (44%) 97% [===========-] 241 kB/s | 8.6 MB     00:01 ETA (2/10): mysql-server-5 (44%) 98% [===========-] 241 kB/s | 8.6 MB     00:00 ETA (2/10): mysql-server-5 (45%) 98% [===========-] 241 kB/s | 8.7 MB     00:00 ETA (2/10): mysql-server-5 (45%) 99% [===========-] 241 kB/s | 8.8 MB     00:00 ETA (2/10): mysql-server-5.1.73-7.el6.i686.rpm               | 8.8 MB     00:37     
+(3/10): perl-5.10.1-14 (46%)  0% [            ]  0.0 B/s |  91 kB     --:-- ETA (3/10): perl-5.10.1-14 (46%)  1% [            ] 121 kB/s | 164 kB     01:20 ETA (3/10): perl-5.10.1-14 (46%)  2% [            ] 128 kB/s | 236 kB     01:15 ETA (3/10): perl-5.10.1-14 (47%)  3% [            ] 135 kB/s | 309 kB     01:11 ETA (3/10): perl-5.10.1-14 (47%)  3% [            ] 133 kB/s | 379 kB     01:11 ETA (3/10): perl-5.10.1-14 (48%)  5% [-           ] 154 kB/s | 523 kB     01:01 ETA (3/10): perl-5.10.1-14 (48%)  5% [-           ] 159 kB/s | 596 kB     00:58 ETA (3/10): perl-5.10.1-14 (48%)  6% [-           ] 164 kB/s | 669 kB     00:56 ETA (3/10): perl-5.10.1-14 (49%)  7% [-           ] 169 kB/s | 741 kB     00:54 ETA (3/10): perl-5.10.1-14 (49%)  8% [-           ] 173 kB/s | 814 kB     00:52 ETA (3/10): perl-5.10.1-14 (49%)  8% [=           ] 177 kB/s | 887 kB     00:51 ETA (3/10): perl-5.10.1-14 (50%)  9% [=           ] 168 kB/s | 945 kB     00:53 ETA (3/10): perl-5.10.1-14 (50%) 11% [=           ] 189 kB/s | 1.1 MB     00:47 ETA (3/10): perl-5.10.1-14 (51%) 11% [=           ] 192 kB/s | 1.1 MB     00:45 ETA (3/10): perl-5.10.1-14 (51%) 12% [=           ] 195 kB/s | 1.2 MB     00:44 ETA (3/10): perl-5.10.1-14 (51%) 13% [=-          ] 197 kB/s | 1.3 MB     00:43 ETA (3/10): perl-5.10.1-14 (52%) 13% [=-          ] 200 kB/s | 1.4 MB     00:42 ETA (3/10): perl-5.10.1-14 (52%) 14% [=-          ] 202 kB/s | 1.4 MB     00:41 ETA (3/10): perl-5.10.1-14 (52%) 15% [=-          ] 205 kB/s | 1.5 MB     00:41 ETA (3/10): perl-5.10.1-14 (53%) 16% [=-          ] 207 kB/s | 1.6 MB     00:40 ETA (3/10): perl-5.10.1-14 (53%) 16% [==          ] 209 kB/s | 1.6 MB     00:39 ETA (3/10): perl-5.10.1-14 (53%) 17% [==          ] 211 kB/s | 1.7 MB     00:38 ETA (3/10): perl-5.10.1-14 (54%) 18% [==          ] 213 kB/s | 1.8 MB     00:38 ETA (3/10): perl-5.10.1-14 (54%) 19% [==          ] 214 kB/s | 1.9 MB     00:37 ETA (3/10): perl-5.10.1-14 (54%) 19% [==          ] 216 kB/s | 1.9 MB     00:36 ETA (3/10): perl-5.10.1-14 (55%) 20% [==          ] 217 kB/s | 2.0 MB     00:36 ETA (3/10): perl-5.10.1-14 (55%) 21% [==-         ] 219 kB/s | 2.1 MB     00:35 ETA (3/10): perl-5.10.1-14 (55%) 21% [==-         ] 220 kB/s | 2.1 MB     00:35 ETA (3/10): perl-5.10.1-14 (56%) 22% [==-         ] 221 kB/s | 2.2 MB     00:34 ETA (3/10): perl-5.10.1-14 (56%) 23% [==-         ] 222 kB/s | 2.3 MB     00:34 ETA (3/10): perl-5.10.1-14 (56%) 24% [==-         ] 223 kB/s | 2.4 MB     00:33 ETA (3/10): perl-5.10.1-14 (57%) 24% [==-         ] 209 kB/s | 2.4 MB     00:35 ETA (3/10): perl-5.10.1-14 (57%) 26% [===         ] 227 kB/s | 2.6 MB     00:32 ETA (3/10): perl-5.10.1-14 (58%) 27% [===         ] 228 kB/s | 2.6 MB     00:31 ETA (3/10): perl-5.10.1-14 (58%) 27% [===         ] 228 kB/s | 2.7 MB     00:31 ETA (3/10): perl-5.10.1-14 (58%) 28% [===         ] 229 kB/s | 2.8 MB     00:31 ETA (3/10): perl-5.10.1-14 (59%) 29% [===-        ] 229 kB/s | 2.8 MB     00:30 ETA (3/10): perl-5.10.1-14 (59%) 29% [===-        ] 230 kB/s | 2.9 MB     00:30 ETA (3/10): perl-5.10.1-14 (59%) 30% [===-        ] 217 kB/s | 3.0 MB     00:31 ETA (3/10): perl-5.10.1-14 (60%) 32% [===-        ] 233 kB/s | 3.1 MB     00:29 ETA (3/10): perl-5.10.1-14 (60%) 32% [===-        ] 233 kB/s | 3.2 MB     00:28 ETA (3/10): perl-5.10.1-14 (61%) 33% [====        ] 234 kB/s | 3.3 MB     00:28 ETA (3/10): perl-5.10.1-14 (61%) 34% [====        ] 234 kB/s | 3.3 MB     00:27 ETA (3/10): perl-5.10.1-14 (61%) 35% [====        ] 234 kB/s | 3.4 MB     00:27 ETA (3/10): perl-5.10.1-14 (62%) 35% [====        ] 235 kB/s | 3.5 MB     00:27 ETA (3/10): perl-5.10.1-14 (62%) 36% [====        ] 235 kB/s | 3.6 MB     00:26 ETA (3/10): perl-5.10.1-14 (62%) 37% [====        ] 235 kB/s | 3.6 MB     00:26 ETA (3/10): perl-5.10.1-14 (63%) 38% [====-       ] 236 kB/s | 3.7 MB     00:26 ETA (3/10): perl-5.10.1-14 (63%) 38% [====-       ] 236 kB/s | 3.8 MB     00:25 ETA (3/10): perl-5.10.1-14 (63%) 39% [====-       ] 236 kB/s | 3.8 MB     00:25 ETA (3/10): perl-5.10.1-14 (64%) 40% [====-       ] 236 kB/s | 3.9 MB     00:25 ETA (3/10): perl-5.10.1-14 (64%) 40% [====-       ] 237 kB/s | 4.0 MB     00:24 ETA (3/10): perl-5.10.1-14 (64%) 41% [=====       ] 237 kB/s | 4.1 MB     00:24 ETA (3/10): perl-5.10.1-14 (65%) 42% [=====       ] 237 kB/s | 4.1 MB     00:24 ETA (3/10): perl-5.10.1-14 (65%) 43% [=====       ] 237 kB/s | 4.2 MB     00:23 ETA (3/10): perl-5.10.1-14 (65%) 43% [=====       ] 238 kB/s | 4.3 MB     00:23 ETA (3/10): perl-5.10.1-14 (66%) 44% [=====       ] 238 kB/s | 4.3 MB     00:23 ETA (3/10): perl-5.10.1-14 (66%) 45% [=====       ] 238 kB/s | 4.4 MB     00:22 ETA (3/10): perl-5.10.1-14 (66%) 46% [=====-      ] 238 kB/s | 4.5 MB     00:22 ETA (3/10): perl-5.10.1-14 (67%) 46% [=====-      ] 223 kB/s | 4.5 MB     00:23 ETA (3/10): perl-5.10.1-14 (67%) 48% [=====-      ] 239 kB/s | 4.7 MB     00:21 ETA (3/10): perl-5.10.1-14 (68%) 48% [=====-      ] 239 kB/s | 4.8 MB     00:21 ETA (3/10): perl-5.10.1-14 (68%) 49% [=====-      ] 239 kB/s | 4.8 MB     00:20 ETA (3/10): perl-5.10.1-14 (68%) 50% [======      ] 239 kB/s | 4.9 MB     00:20 ETA (3/10): perl-5.10.1-14 (69%) 51% [======      ] 239 kB/s | 5.0 MB     00:20 ETA (3/10): perl-5.10.1-14 (69%) 51% [======      ] 239 kB/s | 5.0 MB     00:20 ETA (3/10): perl-5.10.1-14 (70%) 52% [======      ] 239 kB/s | 5.1 MB     00:19 ETA (3/10): perl-5.10.1-14 (70%) 52% [======      ] 222 kB/s | 5.2 MB     00:21 ETA (3/10): perl-5.10.1-14 (70%) 54% [======-     ] 241 kB/s | 5.3 MB     00:18 ETA (3/10): perl-5.10.1-14 (71%) 55% [======-     ] 241 kB/s | 5.4 MB     00:18 ETA (3/10): perl-5.10.1-14 (71%) 56% [======-     ] 241 kB/s | 5.4 MB     00:18 ETA (3/10): perl-5.10.1-14 (71%) 56% [======-     ] 240 kB/s | 5.5 MB     00:17 ETA (3/10): perl-5.10.1-14 (72%) 57% [======-     ] 240 kB/s | 5.6 MB     00:17 ETA (3/10): perl-5.10.1-14 (72%) 58% [======-     ] 240 kB/s | 5.7 MB     00:17 ETA (3/10): perl-5.10.1-14 (72%) 58% [=======     ] 240 kB/s | 5.7 MB     00:17 ETA (3/10): perl-5.10.1-14 (73%) 59% [=======     ] 240 kB/s | 5.8 MB     00:16 ETA (3/10): perl-5.10.1-14 (73%) 60% [=======     ] 240 kB/s | 5.9 MB     00:16 ETA (3/10): perl-5.10.1-14 (73%) 61% [=======     ] 240 kB/s | 5.9 MB     00:16 ETA (3/10): perl-5.10.1-14 (74%) 61% [=======     ] 240 kB/s | 6.0 MB     00:15 ETA (3/10): perl-5.10.1-14 (74%) 62% [=======-    ] 240 kB/s | 6.1 MB     00:15 ETA (3/10): perl-5.10.1-14 (74%) 63% [=======-    ] 240 kB/s | 6.2 MB     00:15 ETA (3/10): perl-5.10.1-14 (75%) 64% [=======-    ] 240 kB/s | 6.2 MB     00:14 ETA (3/10): perl-5.10.1-14 (75%) 64% [=======-    ] 240 kB/s | 6.3 MB     00:14 ETA (3/10): perl-5.10.1-14 (75%) 65% [=======-    ] 240 kB/s | 6.4 MB     00:14 ETA (3/10): perl-5.10.1-14 (76%) 66% [=======-    ] 240 kB/s | 6.4 MB     00:14 ETA (3/10): perl-5.10.1-14 (76%) 66% [========    ] 240 kB/s | 6.5 MB     00:13 ETA (3/10): perl-5.10.1-14 (76%) 67% [========    ] 240 kB/s | 6.6 MB     00:13 ETA (3/10): perl-5.10.1-14 (77%) 68% [========    ] 240 kB/s | 6.7 MB     00:13 ETA (3/10): perl-5.10.1-14 (77%) 68% [========    ] 226 kB/s | 6.7 MB     00:13 ETA (3/10): perl-5.10.1-14 (78%) 70% [========    ] 241 kB/s | 6.8 MB     00:12 ETA (3/10): perl-5.10.1-14 (78%) 70% [========    ] 241 kB/s | 6.9 MB     00:12 ETA (3/10): perl-5.10.1-14 (78%) 71% [========-   ] 241 kB/s | 7.0 MB     00:11 ETA (3/10): perl-5.10.1-14 (79%) 72% [========-   ] 241 kB/s | 7.0 MB     00:11 ETA (3/10): perl-5.10.1-14 (79%) 72% [========-   ] 241 kB/s | 7.1 MB     00:11 ETA (3/10): perl-5.10.1-14 (79%) 73% [========-   ] 241 kB/s | 7.2 MB     00:10 ETA (3/10): perl-5.10.1-14 (80%) 74% [========-   ] 241 kB/s | 7.2 MB     00:10 ETA (3/10): perl-5.10.1-14 (80%) 75% [=========   ] 241 kB/s | 7.3 MB     00:10 ETA (3/10): perl-5.10.1-14 (80%) 75% [=========   ] 224 kB/s | 7.3 MB     00:10 ETA (3/10): perl-5.10.1-14 (81%) 76% [=========   ] 242 kB/s | 7.5 MB     00:09 ETA (3/10): perl-5.10.1-14 (81%) 77% [=========   ] 242 kB/s | 7.5 MB     00:09 ETA (3/10): perl-5.10.1-14 (81%) 78% [=========   ] 242 kB/s | 7.6 MB     00:08 ETA (3/10): perl-5.10.1-14 (82%) 79% [=========   ] 241 kB/s | 7.7 MB     00:08 ETA (3/10): perl-5.10.1-14 (82%) 79% [=========-  ] 241 kB/s | 7.8 MB     00:08 ETA (3/10): perl-5.10.1-14 (82%) 80% [=========-  ] 241 kB/s | 7.8 MB     00:08 ETA (3/10): perl-5.10.1-14 (83%) 81% [=========-  ] 241 kB/s | 7.9 MB     00:07 ETA (3/10): perl-5.10.1-14 (83%) 81% [=========-  ] 241 kB/s | 8.0 MB     00:07 ETA (3/10): perl-5.10.1-14 (83%) 82% [=========-  ] 241 kB/s | 8.0 MB     00:07 ETA (3/10): perl-5.10.1-14 (84%) 83% [==========  ] 241 kB/s | 8.1 MB     00:06 ETA (3/10): perl-5.10.1-14 (84%) 84% [==========  ] 241 kB/s | 8.2 MB     00:06 ETA (3/10): perl-5.10.1-14 (84%) 84% [==========  ] 238 kB/s | 8.2 MB     00:06 ETA (3/10): perl-5.10.1-14 (85%) 85% [==========  ] 239 kB/s | 8.3 MB     00:06 ETA (3/10): perl-5.10.1-14 (85%) 86% [==========  ] 239 kB/s | 8.4 MB     00:05 ETA (3/10): perl-5.10.1-14 (85%) 86% [==========  ] 239 kB/s | 8.5 MB     00:05 ETA (3/10): perl-5.10.1-14 (86%) 87% [==========- ] 239 kB/s | 8.5 MB     00:05 ETA (3/10): perl-5.10.1-14 (86%) 88% [==========- ] 239 kB/s | 8.6 MB     00:04 ETA (3/10): perl-5.10.1-14 (86%) 89% [==========- ] 239 kB/s | 8.7 MB     00:04 ETA (3/10): perl-5.10.1-14 (87%) 89% [==========- ] 226 kB/s | 8.7 MB     00:04 ETA (3/10): perl-5.10.1-14 (87%) 91% [==========- ] 240 kB/s | 8.9 MB     00:03 ETA (3/10): perl-5.10.1-14 (88%) 91% [=========== ] 240 kB/s | 8.9 MB     00:03 ETA (3/10): perl-5.10.1-14 (88%) 92% [=========== ] 240 kB/s | 9.0 MB     00:03 ETA (3/10): perl-5.10.1-14 (88%) 93% [=========== ] 240 kB/s | 9.1 MB     00:02 ETA (3/10): perl-5.10.1-14 (89%) 93% [=========== ] 240 kB/s | 9.1 MB     00:02 ETA (3/10): perl-5.10.1-14 (89%) 94% [=========== ] 240 kB/s | 9.2 MB     00:02 ETA (3/10): perl-5.10.1-14 (89%) 95% [=========== ] 240 kB/s | 9.3 MB     00:01 ETA (3/10): perl-5.10.1-14 (90%) 96% [===========-] 240 kB/s | 9.4 MB     00:01 ETA (3/10): perl-5.10.1-14 (90%) 96% [===========-] 240 kB/s | 9.4 MB     00:01 ETA (3/10): perl-5.10.1-14 (90%) 97% [===========-] 240 kB/s | 9.5 MB     00:00 ETA (3/10): perl-5.10.1-14 (91%) 98% [===========-] 240 kB/s | 9.6 MB     00:00 ETA (3/10): perl-5.10.1-14 (91%) 99% [===========-] 240 kB/s | 9.6 MB     00:00 ETA (3/10): perl-5.10.1-14 (91%) 99% [===========-] 234 kB/s | 9.7 MB     00:00 ETA (3/10): perl-5.10.1-141.el6_7.1.i686.rpm                 | 9.7 MB     00:41     
+(4/10): perl-DBD-MySQL (92%) 32% [===-        ]  0.0 B/s |  44 kB     --:-- ETA (4/10): perl-DBD-MySQL-4.013-3.el6.i686.rpm              | 134 kB     00:00     
+(5/10): perl-DBI-1.609 (92%)  3% [            ]  0.0 B/s |  27 kB     --:-- ETA (5/10): perl-DBI-1.609 (92%) 10% [=           ]  54 kB/s |  72 kB     00:11 ETA (5/10): perl-DBI-1.609 (93%) 25% [===         ]  72 kB/s | 177 kB     00:07 ETA (5/10): perl-DBI-1.609 (93%) 35% [====        ]  82 kB/s | 249 kB     00:05 ETA (5/10): perl-DBI-1.609 (93%) 36% [====        ]  72 kB/s | 256 kB     00:06 ETA (5/10): perl-DBI-1.609 (94%) 48% [=====-      ]  78 kB/s | 344 kB     00:04 ETA (5/10): perl-DBI-1.609 (94%) 57% [======-     ]  86 kB/s | 409 kB     00:03 ETA (5/10): perl-DBI-1.609 (94%) 68% [========    ]  95 kB/s | 481 kB     00:02 ETA (5/10): perl-DBI-1.609 (94%) 73% [========-   ]  95 kB/s | 520 kB     00:01 ETA (5/10): perl-DBI-1.609 (95%) 88% [==========- ] 109 kB/s | 622 kB     00:00 ETA (5/10): perl-DBI-1.609 (95%) 98% [===========-] 117 kB/s | 695 kB     00:00 ETA (5/10): perl-DBI-1.609-4.el6.i686.rpm                    | 705 kB     00:04     
+(6/10): perl-Module-Pluggable-3.90-141.el6_7.1.i686.rpm  |  40 kB     00:00     
+(7/10): perl-Pod-Escapes-1.04-141.el6_7.1.i686.rpm       |  33 kB     00:00     
+(8/10): perl-Pod-Simpl (96%) 41% [=====       ]  0.0 B/s |  89 kB     --:-- ETA (8/10): perl-Pod-Simpl (96%) 61% [=======     ]  52 kB/s | 130 kB     00:01 ETA (8/10): perl-Pod-Simp (97%) 100% [============]  61 kB/s | 213 kB     00:00 ETA (8/10): perl-Pod-Simple-3.13-141.el6_7.1.i686.rpm        | 213 kB     00:01     
+(9/10): perl-libs-5.10 (97%) 16% [=-          ]  0.0 B/s |  98 kB     --:-- ETA (9/10): perl-libs-5.10 (97%) 28% [===         ] 120 kB/s | 171 kB     00:03 ETA (9/10): perl-libs-5.10 (98%) 41% [====-       ] 127 kB/s | 244 kB     00:02 ETA (9/10): perl-libs-5.10 (98%) 53% [======      ] 134 kB/s | 316 kB     00:02 ETA (9/10): perl-libs-5.10 (98%) 65% [=======-    ] 140 kB/s | 389 kB     00:01 ETA (9/10): perl-libs-5.10 (99%) 77% [=========   ] 147 kB/s | 462 kB     00:00 ETA (9/10): perl-libs-5.10 (99%) 89% [==========- ] 152 kB/s | 534 kB     00:00 ETA (9/10): perl-libs-5.10.1-141.el6_7.1.i686.rpm            | 594 kB     00:02     
+(10/10): perl-version-0.77-141.el6_7.1.i686.rpm          |  52 kB     00:00     
+--------------------------------------------------------------------------------
+Total                                           229 kB/s |  21 MB     01:34     
+Running rpm_check_debug
+Running Transaction Test
+Transaction Test Succeeded
+Running Transaction
+  Installing : 1:perl-Pod-Escapes-1.04-141 [#####                       ]  1/10  Installing : 1:perl-Pod-Escapes-1.04-141 [########################### ]  1/10  Installing : 1:perl-Pod-Escapes-1.04-141.el6_7.1.i686                    1/10 
+  Installing : 4:perl-libs-5.10.1-141.el6_ [                            ]  2/10  Installing : 4:perl-libs-5.10.1-141.el6_ [#                           ]  2/10  Installing : 4:perl-libs-5.10.1-141.el6_ [##                          ]  2/10  Installing : 4:perl-libs-5.10.1-141.el6_ [###                         ]  2/10  Installing : 4:perl-libs-5.10.1-141.el6_ [####                        ]  2/10  Installing : 4:perl-libs-5.10.1-141.el6_ [######                      ]  2/10  Installing : 4:perl-libs-5.10.1-141.el6_ [#######                     ]  2/10  Installing : 4:perl-libs-5.10.1-141.el6_ [########                    ]  2/10  Installing : 4:perl-libs-5.10.1-141.el6_ [#########                   ]  2/10  Installing : 4:perl-libs-5.10.1-141.el6_ [###########                 ]  2/10  Installing : 4:perl-libs-5.10.1-141.el6_ [############                ]  2/10  Installing : 4:perl-libs-5.10.1-141.el6_ [#############               ]  2/10  Installing : 4:perl-libs-5.10.1-141.el6_ [##############              ]  2/10  Installing : 4:perl-libs-5.10.1-141.el6_ [################            ]  2/10  Installing : 4:perl-libs-5.10.1-141.el6_ [#################           ]  2/10  Installing : 4:perl-libs-5.10.1-141.el6_ [##################          ]  2/10  Installing : 4:perl-libs-5.10.1-141.el6_ [###################         ]  2/10  Installing : 4:perl-libs-5.10.1-141.el6_ [#####################       ]  2/10  Installing : 4:perl-libs-5.10.1-141.el6_ [######################      ]  2/10  Installing : 4:perl-libs-5.10.1-141.el6_ [#######################     ]  2/10  Installing : 4:perl-libs-5.10.1-141.el6_ [########################    ]  2/10  Installing : 4:perl-libs-5.10.1-141.el6_ [##########################  ]  2/10  Installing : 4:perl-libs-5.10.1-141.el6_ [########################### ]  2/10  Installing : 4:perl-libs-5.10.1-141.el6_7.1.i686                         2/10 
+  Installing : 1:perl-Pod-Simple-3.13-141. [                            ]  3/10  Installing : 1:perl-Pod-Simple-3.13-141. [#                           ]  3/10  Installing : 1:perl-Pod-Simple-3.13-141. [##                          ]  3/10  Installing : 1:perl-Pod-Simple-3.13-141. [###                         ]  3/10  Installing : 1:perl-Pod-Simple-3.13-141. [####                        ]  3/10  Installing : 1:perl-Pod-Simple-3.13-141. [#####                       ]  3/10  Installing : 1:perl-Pod-Simple-3.13-141. [########                    ]  3/10  Installing : 1:perl-Pod-Simple-3.13-141. [############                ]  3/10  Installing : 1:perl-Pod-Simple-3.13-141. [#############               ]  3/10  Installing : 1:perl-Pod-Simple-3.13-141. [###############             ]  3/10  Installing : 1:perl-Pod-Simple-3.13-141. [#################           ]  3/10  Installing : 1:perl-Pod-Simple-3.13-141. [##################          ]  3/10  Installing : 1:perl-Pod-Simple-3.13-141. [###################         ]  3/10  Installing : 1:perl-Pod-Simple-3.13-141. [####################        ]  3/10  Installing : 1:perl-Pod-Simple-3.13-141. [#####################       ]  3/10  Installing : 1:perl-Pod-Simple-3.13-141. [#######################     ]  3/10  Installing : 1:perl-Pod-Simple-3.13-141. [#########################   ]  3/10  Installing : 1:perl-Pod-Simple-3.13-141. [##########################  ]  3/10  Installing : 1:perl-Pod-Simple-3.13-141. [########################### ]  3/10  Installing : 1:perl-Pod-Simple-3.13-141.el6_7.1.i686                     3/10 
+  Installing : 3:perl-version-0.77-141.el6 [###                         ]  4/10  Installing : 3:perl-version-0.77-141.el6 [########                    ]  4/10  Installing : 3:perl-version-0.77-141.el6 [#########                   ]  4/10  Installing : 3:perl-version-0.77-141.el6 [###############             ]  4/10  Installing : 3:perl-version-0.77-141.el6 [########################### ]  4/10  Installing : 3:perl-version-0.77-141.el6_7.1.i686                        4/10 
+  Installing : 1:perl-Module-Pluggable-3.9 [#                           ]  5/10  Installing : 1:perl-Module-Pluggable-3.9 [#####                       ]  5/10  Installing : 1:perl-Module-Pluggable-3.9 [########                    ]  5/10  Installing : 1:perl-Module-Pluggable-3.9 [##########                  ]  5/10  Installing : 1:perl-Module-Pluggable-3.9 [##################          ]  5/10  Installing : 1:perl-Module-Pluggable-3.9 [########################### ]  5/10  Installing : 1:perl-Module-Pluggable-3.90-141.el6_7.1.i686               5/10 
+  Installing : 4:perl-5.10.1-141.el6_7.1.i [                            ]  6/10  Installing : 4:perl-5.10.1-141.el6_7.1.i [#                           ]  6/10  Installing : 4:perl-5.10.1-141.el6_7.1.i [##                          ]  6/10  Installing : 4:perl-5.10.1-141.el6_7.1.i [###                         ]  6/10  Installing : 4:perl-5.10.1-141.el6_7.1.i [####                        ]  6/10  Installing : 4:perl-5.10.1-141.el6_7.1.i [#####                       ]  6/10  Installing : 4:perl-5.10.1-141.el6_7.1.i [######                      ]  6/10  Installing : 4:perl-5.10.1-141.el6_7.1.i [#######                     ]  6/10  Installing : 4:perl-5.10.1-141.el6_7.1.i [########                    ]  6/10  Installing : 4:perl-5.10.1-141.el6_7.1.i [#########                   ]  6/10  Installing : 4:perl-5.10.1-141.el6_7.1.i [##########                  ]  6/10  Installing : 4:perl-5.10.1-141.el6_7.1.i [###########                 ]  6/10  Installing : 4:perl-5.10.1-141.el6_7.1.i [############                ]  6/10  Installing : 4:perl-5.10.1-141.el6_7.1.i [#############               ]  6/10  Installing : 4:perl-5.10.1-141.el6_7.1.i [##############              ]  6/10  Installing : 4:perl-5.10.1-141.el6_7.1.i [###############             ]  6/10  Installing : 4:perl-5.10.1-141.el6_7.1.i [################            ]  6/10  Installing : 4:perl-5.10.1-141.el6_7.1.i [#################           ]  6/10  Installing : 4:perl-5.10.1-141.el6_7.1.i [##################          ]  6/10  Installing : 4:perl-5.10.1-141.el6_7.1.i [###################         ]  6/10  Installing : 4:perl-5.10.1-141.el6_7.1.i [####################        ]  6/10  Installing : 4:perl-5.10.1-141.el6_7.1.i [#####################       ]  6/10  Installing : 4:perl-5.10.1-141.el6_7.1.i [######################      ]  6/10  Installing : 4:perl-5.10.1-141.el6_7.1.i [#######################     ]  6/10  Installing : 4:perl-5.10.1-141.el6_7.1.i [########################    ]  6/10  Installing : 4:perl-5.10.1-141.el6_7.1.i [#########################   ]  6/10  Installing : 4:perl-5.10.1-141.el6_7.1.i [##########################  ]  6/10  Installing : 4:perl-5.10.1-141.el6_7.1.i [########################### ]  6/10  Installing : 4:perl-5.10.1-141.el6_7.1.i686                              6/10 
+  Installing : perl-DBI-1.609-4.el6.i686 [                              ]  7/10  Installing : perl-DBI-1.609-4.el6.i686 [#                             ]  7/10  Installing : perl-DBI-1.609-4.el6.i686 [##                            ]  7/10  Installing : perl-DBI-1.609-4.el6.i686 [###                           ]  7/10  Installing : perl-DBI-1.609-4.el6.i686 [####                          ]  7/10  Installing : perl-DBI-1.609-4.el6.i686 [######                        ]  7/10  Installing : perl-DBI-1.609-4.el6.i686 [#######                       ]  7/10  Installing : perl-DBI-1.609-4.el6.i686 [########                      ]  7/10  Installing : perl-DBI-1.609-4.el6.i686 [#########                     ]  7/10  Installing : perl-DBI-1.609-4.el6.i686 [##########                    ]  7/10  Installing : perl-DBI-1.609-4.el6.i686 [###########                   ]  7/10  Installing : perl-DBI-1.609-4.el6.i686 [############                  ]  7/10  Installing : perl-DBI-1.609-4.el6.i686 [##############                ]  7/10  Installing : perl-DBI-1.609-4.el6.i686 [###############               ]  7/10  Installing : perl-DBI-1.609-4.el6.i686 [################              ]  7/10  Installing : perl-DBI-1.609-4.el6.i686 [#################             ]  7/10  Installing : perl-DBI-1.609-4.el6.i686 [##################            ]  7/10  Installing : perl-DBI-1.609-4.el6.i686 [###################           ]  7/10  Installing : perl-DBI-1.609-4.el6.i686 [####################          ]  7/10  Installing : perl-DBI-1.609-4.el6.i686 [#####################         ]  7/10  Installing : perl-DBI-1.609-4.el6.i686 [######################        ]  7/10  Installing : perl-DBI-1.609-4.el6.i686 [#######################       ]  7/10  Installing : perl-DBI-1.609-4.el6.i686 [########################      ]  7/10  Installing : perl-DBI-1.609-4.el6.i686 [#########################     ]  7/10  Installing : perl-DBI-1.609-4.el6.i686 [###########################   ]  7/10  Installing : perl-DBI-1.609-4.el6.i686 [############################  ]  7/10  Installing : perl-DBI-1.609-4.el6.i686 [############################# ]  7/10  Installing : perl-DBI-1.609-4.el6.i686                                   7/10 
+  Installing : perl-DBD-MySQL-4.013-3.el6. [                            ]  8/10  Installing : perl-DBD-MySQL-4.013-3.el6. [####                        ]  8/10  Installing : perl-DBD-MySQL-4.013-3.el6. [#####                       ]  8/10  Installing : perl-DBD-MySQL-4.013-3.el6. [#######                     ]  8/10  Installing : perl-DBD-MySQL-4.013-3.el6. [############                ]  8/10  Installing : perl-DBD-MySQL-4.013-3.el6. [#################           ]  8/10  Installing : perl-DBD-MySQL-4.013-3.el6. [##################          ]  8/10  Installing : perl-DBD-MySQL-4.013-3.el6. [######################      ]  8/10  Installing : perl-DBD-MySQL-4.013-3.el6. [#########################   ]  8/10  Installing : perl-DBD-MySQL-4.013-3.el6. [########################### ]  8/10  Installing : perl-DBD-MySQL-4.013-3.el6.i686                             8/10 
+  Installing : mysql-5.1.73-7.el6.i686 [                                ]  9/10  Installing : mysql-5.1.73-7.el6.i686 [#                               ]  9/10  Installing : mysql-5.1.73-7.el6.i686 [##                              ]  9/10  Installing : mysql-5.1.73-7.el6.i686 [###                             ]  9/10  Installing : mysql-5.1.73-7.el6.i686 [####                            ]  9/10  Installing : mysql-5.1.73-7.el6.i686 [#####                           ]  9/10  Installing : mysql-5.1.73-7.el6.i686 [######                          ]  9/10  Installing : mysql-5.1.73-7.el6.i686 [#######                         ]  9/10  Installing : mysql-5.1.73-7.el6.i686 [########                        ]  9/10  Installing : mysql-5.1.73-7.el6.i686 [#########                       ]  9/10  Installing : mysql-5.1.73-7.el6.i686 [##########                      ]  9/10  Installing : mysql-5.1.73-7.el6.i686 [###########                     ]  9/10  Installing : mysql-5.1.73-7.el6.i686 [############                    ]  9/10  Installing : mysql-5.1.73-7.el6.i686 [#############                   ]  9/10  Installing : mysql-5.1.73-7.el6.i686 [##############                  ]  9/10  Installing : mysql-5.1.73-7.el6.i686 [###############                 ]  9/10  Installing : mysql-5.1.73-7.el6.i686 [################                ]  9/10  Installing : mysql-5.1.73-7.el6.i686 [#################               ]  9/10  Installing : mysql-5.1.73-7.el6.i686 [##################              ]  9/10  Installing : mysql-5.1.73-7.el6.i686 [###################             ]  9/10  Installing : mysql-5.1.73-7.el6.i686 [####################            ]  9/10  Installing : mysql-5.1.73-7.el6.i686 [#####################           ]  9/10  Installing : mysql-5.1.73-7.el6.i686 [######################          ]  9/10  Installing : mysql-5.1.73-7.el6.i686 [#######################         ]  9/10  Installing : mysql-5.1.73-7.el6.i686 [########################        ]  9/10  Installing : mysql-5.1.73-7.el6.i686 [#########################       ]  9/10  Installing : mysql-5.1.73-7.el6.i686 [##########################      ]  9/10  Installing : mysql-5.1.73-7.el6.i686 [###########################     ]  9/10  Installing : mysql-5.1.73-7.el6.i686 [############################    ]  9/10  Installing : mysql-5.1.73-7.el6.i686 [#############################   ]  9/10  Installing : mysql-5.1.73-7.el6.i686 [##############################  ]  9/10  Installing : mysql-5.1.73-7.el6.i686 [############################### ]  9/10  Installing : mysql-5.1.73-7.el6.i686                                     9/10 
+  Installing : mysql-server-5.1.73-7.el6.i [                            ] 10/10  Installing : mysql-server-5.1.73-7.el6.i [#                           ] 10/10  Installing : mysql-server-5.1.73-7.el6.i [##                          ] 10/10  Installing : mysql-server-5.1.73-7.el6.i [###                         ] 10/10  Installing : mysql-server-5.1.73-7.el6.i [####                        ] 10/10  Installing : mysql-server-5.1.73-7.el6.i [#####                       ] 10/10  Installing : mysql-server-5.1.73-7.el6.i [######                      ] 10/10  Installing : mysql-server-5.1.73-7.el6.i [#######                     ] 10/10  Installing : mysql-server-5.1.73-7.el6.i [########                    ] 10/10  Installing : mysql-server-5.1.73-7.el6.i [#########                   ] 10/10  Installing : mysql-server-5.1.73-7.el6.i [##########                  ] 10/10  Installing : mysql-server-5.1.73-7.el6.i [###########                 ] 10/10  Installing : mysql-server-5.1.73-7.el6.i [############                ] 10/10  Installing : mysql-server-5.1.73-7.el6.i [#############               ] 10/10  Installing : mysql-server-5.1.73-7.el6.i [##############              ] 10/10  Installing : mysql-server-5.1.73-7.el6.i [###############             ] 10/10  Installing : mysql-server-5.1.73-7.el6.i [################            ] 10/10  Installing : mysql-server-5.1.73-7.el6.i [#################           ] 10/10  Installing : mysql-server-5.1.73-7.el6.i [##################          ] 10/10  Installing : mysql-server-5.1.73-7.el6.i [###################         ] 10/10  Installing : mysql-server-5.1.73-7.el6.i [####################        ] 10/10  Installing : mysql-server-5.1.73-7.el6.i [#####################       ] 10/10  Installing : mysql-server-5.1.73-7.el6.i [######################      ] 10/10  Installing : mysql-server-5.1.73-7.el6.i [#######################     ] 10/10  Installing : mysql-server-5.1.73-7.el6.i [########################    ] 10/10  Installing : mysql-server-5.1.73-7.el6.i [#########################   ] 10/10  Installing : mysql-server-5.1.73-7.el6.i [##########################  ] 10/10  Installing : mysql-server-5.1.73-7.el6.i [########################### ] 10/10  Installing : mysql-server-5.1.73-7.el6.i686                             10/10 
+  Verifying  : 1:perl-Module-Pluggable-3.90-141.el6_7.1.i686               1/10 
+  Verifying  : perl-DBD-MySQL-4.013-3.el6.i686                             2/10 
+  Verifying  : mysql-server-5.1.73-7.el6.i686                              3/10 
+  Verifying  : 1:perl-Pod-Simple-3.13-141.el6_7.1.i686                     4/10 
+  Verifying  : 4:perl-5.10.1-141.el6_7.1.i686                              5/10 
+  Verifying  : perl-DBI-1.609-4.el6.i686                                   6/10 
+  Verifying  : 4:perl-libs-5.10.1-141.el6_7.1.i686                         7/10 
+  Verifying  : 1:perl-Pod-Escapes-1.04-141.el6_7.1.i686                    8/10 
+  Verifying  : mysql-5.1.73-7.el6.i686                                     9/10 
+  Verifying  : 3:perl-version-0.77-141.el6_7.1.i686                       10/10 
+
+Installed:
+  mysql-server.i686 0:5.1.73-7.el6                                              
+
+Dependency Installed:
+  mysql.i686 0:5.1.73-7.el6                                                     
+  perl.i686 4:5.10.1-141.el6_7.1                                                
+  perl-DBD-MySQL.i686 0:4.013-3.el6                                             
+  perl-DBI.i686 0:1.609-4.el6                                                   
+  perl-Module-Pluggable.i686 1:3.90-141.el6_7.1                                 
+  perl-Pod-Escapes.i686 1:1.04-141.el6_7.1                                      
+  perl-Pod-Simple.i686 1:3.13-141.el6_7.1                                       
+  perl-libs.i686 4:5.10.1-141.el6_7.1                                           
+  perl-version.i686 3:0.77-141.el6_7.1                                          
+
+Complete!
+[root@localhost ~]# sudo service mysqld start
+Initializing MySQL database:  Installing MySQL system tables...
+OK
+Filling help tables...
+OK
+
+To start mysqld at boot time you have to copy
+support-files/mysql.server to the right place for your system
+
+PLEASE REMEMBER TO SET A PASSWORD FOR THE MySQL root USER !
+To do so, start the server, then issue the following commands:
+
+/usr/bin/mysqladmin -u root password 'new-password'
+/usr/bin/mysqladmin -u root -h localhost.localdomain password 'new-password'
+
+Alternatively you can run:
+/usr/bin/mysql_secure_installation
+
+which will also give you the option of removing the test
+databases and anonymous user created by default.  This is
+strongly recommended for production servers.
+
+See the manual for more instructions.
+
+You can start the MySQL daemon with:
+cd /usr ; /usr/bin/mysqld_safe &
+
+You can test the MySQL daemon with mysql-test-run.pl
+cd /usr/mysql-test ; perl mysql-test-run.pl
+
+Please report any problems with the /usr/bin/mysqlbug script!
+
+[60G[[0;32m  OK  [0;39m]
+Starting mysqld:  [60G[[0;32m  OK  [0;39m]
+[root@localhost ~]# sudo /usr/bin/mysql_secure_installation
+
+
+
+
+NOTE: RUNNING ALL PARTS OF THIS SCRIPT IS RECOMMENDED FOR ALL MySQL
+      SERVERS IN PRODUCTION USE!  PLEASE READ EACH STEP CAREFULLY!
+
+
+In order to log into MySQL to secure it, we'll need the current
+password for the root user.  If you've just installed MySQL, and
+you haven't set the root password yet, the password will be blank,
+so you should just press enter here.
+
+Enter current password for root (enter for none): 
+OK, successfully used password, moving on...
+
+Setting the root password ensures that nobody can log into the MySQL
+root user without the proper authorisation.
+
+Set root password? [Y/n] y
+New password: 
+Re-enter new password: 
+Password updated successfully!
+Reloading privilege tables..
+ ... Success!
+
+
+By default, a MySQL installation has an anonymous user, allowing anyone
+to log into MySQL without having to have a user account created for
+them.  This is intended only for testing, and to make the installation
+go a bit smoother.  You should remove them before moving into a
+production environment.
+
+Remove anonymous users? [Y/n] y
+ ... Success!
+
+Normally, root should only be allowed to connect from 'localhost'.  This
+ensures that someone cannot guess at the root password from the network.
+
+Disallow root login remotely? [Y/n] y
+ ... Success!
+
+By default, MySQL comes with a database named 'test' that anyone can
+access.  This is also intended only for testing, and should be removed
+before moving into a production environment.
+
+Remove test database and access to it? [Y/n] y
+ - Dropping test database...
+ ... Success!
+ - Removing privileges on test database...
+ ... Success!
+
+Reloading the privilege tables will ensure that all changes made so far
+will take effect immediately.
+
+Reload privilege tables now? [Y/n] y
+ ... Success!
+
+Cleaning up...
+
+
+
+All done!  If you've completed all of the above steps, your MySQL
+installation should now be secure.
+
+Thanks for using MySQL!
+
+
+[root@localhost ~]# sudo yum install php php-mysql
+Loaded plugins: fastestmirror
+Setting up Install Process
+Loading mirror speeds from cached hostfile
+ * base: mirrors.vonline.vn
+ * extras: mirror.rise.ph
+ * updates: mirror.rise.ph
+Resolving Dependencies
+--> Running transaction check
+---> Package php.i686 0:5.3.3-47.el6 will be installed
+--> Processing Dependency: php-common(x86-32) = 5.3.3-47.el6 for package: php-5.3.3-47.el6.i686
+--> Processing Dependency: php-cli(x86-32) = 5.3.3-47.el6 for package: php-5.3.3-47.el6.i686
+---> Package php-mysql.i686 0:5.3.3-47.el6 will be installed
+--> Processing Dependency: php-pdo(x86-32) for package: php-mysql-5.3.3-47.el6.i686
+--> Running transaction check
+---> Package php-cli.i686 0:5.3.3-47.el6 will be installed
+---> Package php-common.i686 0:5.3.3-47.el6 will be installed
+---> Package php-pdo.i686 0:5.3.3-47.el6 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package             Arch          Version                  Repository     Size
+================================================================================
+Installing:
+ php                 i686          5.3.3-47.el6             base          1.1 M
+ php-mysql           i686          5.3.3-47.el6             base           83 k
+Installing for dependencies:
+ php-cli             i686          5.3.3-47.el6             base          2.2 M
+ php-common          i686          5.3.3-47.el6             base          531 k
+ php-pdo             i686          5.3.3-47.el6             base           79 k
+
+Transaction Summary
+================================================================================
+Install       5 Package(s)
+
+Total download size: 4.0 M
+Installed size: 13 M
+Is this ok [y/N]: y
+Downloading Packages:
+(1/5): php-5.3.3-47.el (1%)  6% [-            ]  0.0 B/s |  70 kB     --:-- ETA (1/5): php-5.3.3-47.el (4%) 15% [==           ] 160 kB/s | 181 kB     00:06 ETA (1/5): php-5.3.3-47.el (6%) 22% [==-          ] 165 kB/s | 255 kB     00:05 ETA (1/5): php-5.3.3-47.el (7%) 28% [===-         ] 170 kB/s | 328 kB     00:04 ETA (1/5): php-5.3.3-47.el (8%) 32% [====         ] 159 kB/s | 369 kB     00:04 ETA (1/5): php-5.3.3-47.el (12%) 43% [=====       ] 177 kB/s | 505 kB     00:03 ETA (1/5): php-5.3.3-47.el (14%) 52% [======      ] 186 kB/s | 605 kB     00:02 ETA (1/5): php-5.3.3-47.el (16%) 58% [=======     ] 189 kB/s | 677 kB     00:02 ETA (1/5): php-5.3.3-47.el (18%) 65% [=======-    ] 192 kB/s | 750 kB     00:02 ETA (1/5): php-5.3.3-47.el (19%) 71% [========-   ] 195 kB/s | 823 kB     00:01 ETA (1/5): php-5.3.3-47.el (21%) 77% [=========   ] 198 kB/s | 895 kB     00:01 ETA (1/5): php-5.3.3-47.el (23%) 84% [==========  ] 201 kB/s | 968 kB     00:00 ETA (1/5): php-5.3.3-47.el (25%) 90% [==========- ] 203 kB/s | 1.0 MB     00:00 ETA (1/5): php-5.3.3-47.el (27%) 96% [===========-] 205 kB/s | 1.1 MB     00:00 ETA (1/5): php-5.3.3-47.el6.i686.rpm                         | 1.1 MB     00:04     
+(2/5): php-cli-5.3.3-4 (30%)  4% [-           ]  0.0 B/s | 114 kB     --:-- ETA (2/5): php-cli-5.3.3-4 (32%)  8% [-           ] 120 kB/s | 187 kB     00:17 ETA (2/5): php-cli-5.3.3-4 (34%) 11% [=           ] 127 kB/s | 259 kB     00:15 ETA (2/5): php-cli-5.3.3-4 (35%) 14% [=-          ] 134 kB/s | 333 kB     00:14 ETA (2/5): php-cli-5.3.3-4 (37%) 17% [==          ] 141 kB/s | 408 kB     00:13 ETA (2/5): php-cli-5.3.3-4 (39%) 21% [==-         ] 147 kB/s | 480 kB     00:12 ETA (2/5): php-cli-5.3.3-4 (41%) 24% [==-         ] 152 kB/s | 553 kB     00:11 ETA (2/5): php-cli-5.3.3-4 (43%) 27% [===         ] 158 kB/s | 626 kB     00:10 ETA (2/5): php-cli-5.3.3-4 (44%) 30% [===-        ] 163 kB/s | 698 kB     00:09 ETA (2/5): php-cli-5.3.3-4 (46%) 33% [====        ] 167 kB/s | 771 kB     00:09 ETA (2/5): php-cli-5.3.3-4 (48%) 36% [====        ] 172 kB/s | 844 kB     00:08 ETA (2/5): php-cli-5.3.3-4 (50%) 40% [====-       ] 176 kB/s | 918 kB     00:07 ETA (2/5): php-cli-5.3.3-4 (50%) 41% [====-       ] 166 kB/s | 943 kB     00:08 ETA (2/5): php-cli-5.3.3-4 (54%) 47% [=====-      ] 186 kB/s | 1.1 MB     00:06 ETA (2/5): php-cli-5.3.3-4 (56%) 51% [======      ] 189 kB/s | 1.1 MB     00:05 ETA (2/5): php-cli-5.3.3-4 (57%) 54% [======-     ] 192 kB/s | 1.2 MB     00:05 ETA (2/5): php-cli-5.3.3-4 (59%) 57% [======-     ] 195 kB/s | 1.3 MB     00:04 ETA (2/5): php-cli-5.3.3-4 (61%) 60% [=======     ] 198 kB/s | 1.4 MB     00:04 ETA (2/5): php-cli-5.3.3-4 (63%) 63% [=======-    ] 201 kB/s | 1.4 MB     00:04 ETA (2/5): php-cli-5.3.3-4 (64%) 66% [=======-    ] 190 kB/s | 1.5 MB     00:04 ETA (2/5): php-cli-5.3.3-4 (68%) 73% [========-   ] 208 kB/s | 1.6 MB     00:02 ETA (2/5): php-cli-5.3.3-4 (70%) 76% [=========   ] 210 kB/s | 1.7 MB     00:02 ETA (2/5): php-cli-5.3.3-4 (71%) 79% [=========-  ] 212 kB/s | 1.8 MB     00:02 ETA (2/5): php-cli-5.3.3-4 (73%) 82% [=========-  ] 214 kB/s | 1.8 MB     00:01 ETA (2/5): php-cli-5.3.3-4 (75%) 85% [==========  ] 215 kB/s | 1.9 MB     00:01 ETA (2/5): php-cli-5.3.3-4 (77%) 88% [==========- ] 217 kB/s | 2.0 MB     00:01 ETA (2/5): php-cli-5.3.3-4 (78%) 92% [=========== ] 218 kB/s | 2.1 MB     00:00 ETA (2/5): php-cli-5.3.3-4 (80%) 95% [=========== ] 220 kB/s | 2.1 MB     00:00 ETA (2/5): php-cli-5.3.3-4 (82%) 98% [===========-] 221 kB/s | 2.2 MB     00:00 ETA (2/5): php-cli-5.3.3-47.el6.i686.rpm                     | 2.2 MB     00:09     
+(3/5): php-common-5.3. (85%) 21% [==-         ]  0.0 B/s | 114 kB     --:-- ETA (3/5): php-common-5.3. (87%) 35% [====        ] 120 kB/s | 187 kB     00:02 ETA (3/5): php-common-5.3. (89%) 48% [=====-      ] 127 kB/s | 259 kB     00:02 ETA (3/5): php-common-5.3. (91%) 62% [=======     ] 134 kB/s | 331 kB     00:01 ETA (3/5): php-common-5.3. (93%) 76% [=========   ] 140 kB/s | 405 kB     00:00 ETA (3/5): php-common-5.3. (94%) 89% [==========- ] 146 kB/s | 477 kB     00:00 ETA (3/5): php-common-5.3.3-47.el6.i686.rpm                  | 531 kB     00:02     
+(4/5): php-mysql-5.3.3-47.el6.i686.rpm                   |  83 kB     00:00     
+(5/5): php-pdo-5.3.3-47.el6.i686.rpm                     |  79 kB     00:00     
+--------------------------------------------------------------------------------
+Total                                           225 kB/s | 4.0 MB     00:18     
+Running rpm_check_debug
+Running Transaction Test
+Transaction Test Succeeded
+Running Transaction
+  Installing : php-common-5.3.3-47.el6.i686 [                             ] 1/5  Installing : php-common-5.3.3-47.el6.i686 [#                            ] 1/5  Installing : php-common-5.3.3-47.el6.i686 [##                           ] 1/5  Installing : php-common-5.3.3-47.el6.i686 [###                          ] 1/5  Installing : php-common-5.3.3-47.el6.i686 [####                         ] 1/5  Installing : php-common-5.3.3-47.el6.i686 [#####                        ] 1/5  Installing : php-common-5.3.3-47.el6.i686 [######                       ] 1/5  Installing : php-common-5.3.3-47.el6.i686 [#######                      ] 1/5  Installing : php-common-5.3.3-47.el6.i686 [########                     ] 1/5  Installing : php-common-5.3.3-47.el6.i686 [#########                    ] 1/5  Installing : php-common-5.3.3-47.el6.i686 [##########                   ] 1/5  Installing : php-common-5.3.3-47.el6.i686 [###########                  ] 1/5  Installing : php-common-5.3.3-47.el6.i686 [############                 ] 1/5  Installing : php-common-5.3.3-47.el6.i686 [#############                ] 1/5  Installing : php-common-5.3.3-47.el6.i686 [##############               ] 1/5  Installing : php-common-5.3.3-47.el6.i686 [###############              ] 1/5  Installing : php-common-5.3.3-47.el6.i686 [################             ] 1/5  Installing : php-common-5.3.3-47.el6.i686 [#################            ] 1/5  Installing : php-common-5.3.3-47.el6.i686 [##################           ] 1/5  Installing : php-common-5.3.3-47.el6.i686 [###################          ] 1/5  Installing : php-common-5.3.3-47.el6.i686 [####################         ] 1/5  Installing : php-common-5.3.3-47.el6.i686 [#####################        ] 1/5  Installing : php-common-5.3.3-47.el6.i686 [######################       ] 1/5  Installing : php-common-5.3.3-47.el6.i686 [#######################      ] 1/5  Installing : php-common-5.3.3-47.el6.i686 [########################     ] 1/5  Installing : php-common-5.3.3-47.el6.i686 [#########################    ] 1/5  Installing : php-common-5.3.3-47.el6.i686 [##########################   ] 1/5  Installing : php-common-5.3.3-47.el6.i686 [###########################  ] 1/5  Installing : php-common-5.3.3-47.el6.i686 [############################ ] 1/5  Installing : php-common-5.3.3-47.el6.i686                                 1/5 
+  Installing : php-pdo-5.3.3-47.el6.i686 [                                ] 2/5  Installing : php-pdo-5.3.3-47.el6.i686 [#############                   ] 2/5  Installing : php-pdo-5.3.3-47.el6.i686 [##################              ] 2/5  Installing : php-pdo-5.3.3-47.el6.i686 [#######################         ] 2/5  Installing : php-pdo-5.3.3-47.el6.i686 [############################### ] 2/5  Installing : php-pdo-5.3.3-47.el6.i686                                    2/5 
+  Installing : php-cli-5.3.3-47.el6.i686 [                                ] 3/5  Installing : php-cli-5.3.3-47.el6.i686 [#                               ] 3/5  Installing : php-cli-5.3.3-47.el6.i686 [##                              ] 3/5  Installing : php-cli-5.3.3-47.el6.i686 [###                             ] 3/5  Installing : php-cli-5.3.3-47.el6.i686 [####                            ] 3/5  Installing : php-cli-5.3.3-47.el6.i686 [#####                           ] 3/5  Installing : php-cli-5.3.3-47.el6.i686 [######                          ] 3/5  Installing : php-cli-5.3.3-47.el6.i686 [#######                         ] 3/5  Installing : php-cli-5.3.3-47.el6.i686 [########                        ] 3/5  Installing : php-cli-5.3.3-47.el6.i686 [#########                       ] 3/5  Installing : php-cli-5.3.3-47.el6.i686 [##########                      ] 3/5  Installing : php-cli-5.3.3-47.el6.i686 [###########                     ] 3/5  Installing : php-cli-5.3.3-47.el6.i686 [############                    ] 3/5  Installing : php-cli-5.3.3-47.el6.i686 [#############                   ] 3/5  Installing : php-cli-5.3.3-47.el6.i686 [##############                  ] 3/5  Installing : php-cli-5.3.3-47.el6.i686 [###############                 ] 3/5  Installing : php-cli-5.3.3-47.el6.i686 [################                ] 3/5  Installing : php-cli-5.3.3-47.el6.i686 [#################               ] 3/5  Installing : php-cli-5.3.3-47.el6.i686 [##################              ] 3/5  Installing : php-cli-5.3.3-47.el6.i686 [###################             ] 3/5  Installing : php-cli-5.3.3-47.el6.i686 [####################            ] 3/5  Installing : php-cli-5.3.3-47.el6.i686 [#####################           ] 3/5  Installing : php-cli-5.3.3-47.el6.i686 [######################          ] 3/5  Installing : php-cli-5.3.3-47.el6.i686 [#######################         ] 3/5  Installing : php-cli-5.3.3-47.el6.i686 [########################        ] 3/5  Installing : php-cli-5.3.3-47.el6.i686 [#########################       ] 3/5  Installing : php-cli-5.3.3-47.el6.i686 [##########################      ] 3/5  Installing : php-cli-5.3.3-47.el6.i686 [###########################     ] 3/5  Installing : php-cli-5.3.3-47.el6.i686 [############################    ] 3/5  Installing : php-cli-5.3.3-47.el6.i686 [#############################   ] 3/5  Installing : php-cli-5.3.3-47.el6.i686 [##############################  ] 3/5  Installing : php-cli-5.3.3-47.el6.i686 [############################### ] 3/5  Installing : php-cli-5.3.3-47.el6.i686                                    3/5 
+  Installing : php-5.3.3-47.el6.i686 [                                    ] 4/5  Installing : php-5.3.3-47.el6.i686 [#                                   ] 4/5  Installing : php-5.3.3-47.el6.i686 [##                                  ] 4/5  Installing : php-5.3.3-47.el6.i686 [###                                 ] 4/5  Installing : php-5.3.3-47.el6.i686 [####                                ] 4/5  Installing : php-5.3.3-47.el6.i686 [#####                               ] 4/5  Installing : php-5.3.3-47.el6.i686 [######                              ] 4/5  Installing : php-5.3.3-47.el6.i686 [#######                             ] 4/5  Installing : php-5.3.3-47.el6.i686 [########                            ] 4/5  Installing : php-5.3.3-47.el6.i686 [#########                           ] 4/5  Installing : php-5.3.3-47.el6.i686 [##########                          ] 4/5  Installing : php-5.3.3-47.el6.i686 [###########                         ] 4/5  Installing : php-5.3.3-47.el6.i686 [############                        ] 4/5  Installing : php-5.3.3-47.el6.i686 [#############                       ] 4/5  Installing : php-5.3.3-47.el6.i686 [##############                      ] 4/5  Installing : php-5.3.3-47.el6.i686 [###############                     ] 4/5  Installing : php-5.3.3-47.el6.i686 [################                    ] 4/5  Installing : php-5.3.3-47.el6.i686 [#################                   ] 4/5  Installing : php-5.3.3-47.el6.i686 [##################                  ] 4/5  Installing : php-5.3.3-47.el6.i686 [###################                 ] 4/5  Installing : php-5.3.3-47.el6.i686 [####################                ] 4/5  Installing : php-5.3.3-47.el6.i686 [#####################               ] 4/5  Installing : php-5.3.3-47.el6.i686 [######################              ] 4/5  Installing : php-5.3.3-47.el6.i686 [#######################             ] 4/5  Installing : php-5.3.3-47.el6.i686 [########################            ] 4/5  Installing : php-5.3.3-47.el6.i686 [#########################           ] 4/5  Installing : php-5.3.3-47.el6.i686 [##########################          ] 4/5  Installing : php-5.3.3-47.el6.i686 [###########################         ] 4/5  Installing : php-5.3.3-47.el6.i686 [############################        ] 4/5  Installing : php-5.3.3-47.el6.i686 [#############################       ] 4/5  Installing : php-5.3.3-47.el6.i686 [##############################      ] 4/5  Installing : php-5.3.3-47.el6.i686 [###############################     ] 4/5  Installing : php-5.3.3-47.el6.i686 [################################    ] 4/5  Installing : php-5.3.3-47.el6.i686 [#################################   ] 4/5  Installing : php-5.3.3-47.el6.i686 [##################################  ] 4/5  Installing : php-5.3.3-47.el6.i686 [################################### ] 4/5  Installing : php-5.3.3-47.el6.i686                                        4/5 
+  Installing : php-mysql-5.3.3-47.el6.i686 [                              ] 5/5  Installing : php-mysql-5.3.3-47.el6.i686 [######                        ] 5/5  Installing : php-mysql-5.3.3-47.el6.i686 [#################             ] 5/5  Installing : php-mysql-5.3.3-47.el6.i686 [#########################     ] 5/5  Installing : php-mysql-5.3.3-47.el6.i686 [############################# ] 5/5  Installing : php-mysql-5.3.3-47.el6.i686                                  5/5 
+  Verifying  : php-pdo-5.3.3-47.el6.i686                                    1/5 
+  Verifying  : php-mysql-5.3.3-47.el6.i686                                  2/5 
+  Verifying  : php-5.3.3-47.el6.i686                                        3/5 
+  Verifying  : php-cli-5.3.3-47.el6.i686                                    4/5 
+  Verifying  : php-common-5.3.3-47.el6.i686                                 5/5 
+
+Installed:
+  php.i686 0:5.3.3-47.el6             php-mysql.i686 0:5.3.3-47.el6            
+
+Dependency Installed:
+  php-cli.i686 0:5.3.3-47.el6           php-common.i686 0:5.3.3-47.el6          
+  php-pdo.i686 0:5.3.3-47.el6          
+
+Complete!
+[root@localhost ~]# um[K[Kyum search php-
+Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+ * base: centos-hcm.viettelidc.com.vn
+ * extras: centos-hcm.viettelidc.com.vn
+ * updates: centos-hcm.viettelidc.com.vn
+============================== N/S Matched: php- ===============================
+[1mphp-[0;10mbcmath.i686 : A module for PHP applications for using the bcmath library
+[1mphp-[0;10mcli.i686 : Command-line interface for PHP
+[1mphp-[0;10mcommon.i686 : Common files for PHP
+[1mphp-[0;10mdba.i686 : A database abstraction layer module for PHP applications
+[1mphp-[0;10mdevel.i686 : Files needed for building PHP extensions
+[1mphp-[0;10membedded.i686 : PHP library for embedding in applications
+[1mphp-[0;10menchant.i686 : Human Language and Character Encoding Support
+[1mphp-[0;10mfpm.i686 : PHP FastCGI Process Manager
+[1mphp-[0;10mgd.i686 : A module for PHP applications for using the gd graphics library
+[1mphp-[0;10mimap.i686 : A module for PHP applications that use IMAP
+[1mphp-[0;10mintl.i686 : Internationalization extension for PHP applications
+[1mphp-[0;10mldap.i686 : A module for PHP applications that use LDAP
+[1mphp-[0;10mmbstring.i686 : A module for PHP applications which need multi-byte string
+                  : handling
+[1mphp-[0;10mmysql.i686 : A module for PHP applications that use MySQL databases
+[1mphp-[0;10modbc.i686 : A module for PHP applications that use ODBC databases
+[1mphp-[0;10mpdo.i686 : A database access abstraction module for PHP applications
+[1mphp-[0;10mpear.noarch : PHP Extension and Application Repository framework
+[1mphp-[0;10mpecl-apc.i686 : APC caches and optimizes PHP intermediate code
+[1mphp-[0;10mpecl-apc-devel.i686 : APC developer files (header)
+[1mphp-[0;10mpecl-memcache.i686 : Extension to work with the Memcached caching daemon
+[1mphp-[0;10mpgsql.i686 : A PostgreSQL database module for PHP
+[1mphp-[0;10mprocess.i686 : Modules for PHP script using system process interfaces
+[1mphp-[0;10mpspell.i686 : A module for PHP applications for using pspell interfaces
+[1mphp-[0;10mrecode.i686 : A module for PHP applications for using the recode library
+[1mphp-[0;10msnmp.i686 : A module for PHP applications that query SNMP-managed devices
+[1mphp-[0;10msoap.i686 : A module for PHP applications that use the SOAP protocol
+[1mphp-[0;10mtidy.i686 : Standard PHP module provides tidy library support
+[1mphp-[0;10mxml.i686 : A module for PHP applications which use XML
+[1mphp-[0;10mxmlrpc.i686 : A module for PHP applications which use the XML-RPC protocol
+[1mphp-[0;10mzts.i686 : Thread-safe PHP interpreter for use with the Apache HTTP Server
+
+  Name and summary matches [1monly[0;10m, use "search all" for everything.
+[root@localhost ~]# sudo chkconfig httpd on
+[root@localhost ~]# sudo chkconfig mysqld on
+[root@localhost ~]# sudno [K[K[Ko nano /var/www/html/info.php
+[1;25r[0;10m[4l[?7h[?25h[?0c[39;49m[39;49m[0;10m[H[J[0;10;7m  GNU nano 2.0.9          File: /var/www/html/info.php                          [23;35H[ New File ][24d^G[0;10m Get Help  [0;10;7m^O[0;10m WriteOut  [0;10;7m^R[0;10m Read File [0;10;7m^Y[0;10m Prev Page [0;10;7m^K[0;10m Cut Text  [0;10;7m^C[0;10m Cur Pos[25d[0;10;7m^X[0;10m Exit[14G[0;10;7m^J[0;10m Justify   [0;10;7m^W[0;10m Where Is  [0;10;7m^V[0;10m Next Page [0;10;7m^U[0;10m UnCut Text[0;10;7m^T[0;10m To Spell[3d[1;71H[0;10;7mModified[3d[0;10m<?php[4dphpinfo();[5d?>^^^^   [23d[K[5;4H [6d^O[7d[A^O [K[23d[0;10;7mFile Name to Write: /var/www/html/info.php                                      [24;14H[0;10m       [0;10;7m^T[0;10m To Files         [0;10;7mM-M[0;10m Mac Format      [0;10;7mM-P[0;10m Prepend[K[25;2H[0;10;7mC[0;10m Cancel           [0;10;7mM-D[0;10m DOS Format      [0;10;7mM-A[0;10m Append          [0;10;7mM-B[0;10m Backup File[K[23;43H[?25l[?1c[1;27H[0;10;7m     DIR: /var/www/html/    [1;71H        [3d.. (parent dir)[4d[0;10m[K[5d[K[23d[K[24;17H[0;10;7m^W[0;10m Where Is     [0;10;7m^Y[0;10m Prev Page    [0;10;7mM-\[0;10m First File  [0;10;7m^_[0;10m Go To Dir[25;2H[0;10;7mX[0;10m Exit  	[0;10;7mM-W[0;10m WhereIs Next[0;10;7m^V[0;10m Next Page    [0;10;7mM-/[0;10m Last File[K[3;18H[?25h[?0c[1;27H[0;10;7mFile: /var/www/html/info.php[1;71HModified[3d[0;10m<?php[K[4dphpinfo();[5d?>[23d[0;10;7mFile Name to Write: /var/www/html/info.php                                      [24;17H[0;10m    [0;10;7m^T[0;10m To Files         [0;10;7mM-M[0;10m Mac Format      [0;10;7mM-P[0;10m Prepend[K[25;2H[0;10;7mC[0;10m Cancel	    [0;10;7mM-D[0;10m DOS Format      [0;10;7mM-A[0;10m Append          [0;10;7mM-B[0;10m Backup File[23;43H[?25l[?1c[1;27H[0;10;7m     DIR: /var/www/html/    [1;71H        [3d.. (parent dir)[4d[0;10m[K[5d[K[23d[K[24;17H[0;10;7m^W[0;10m Where Is     [0;10;7m^Y[0;10m Prev Page    [0;10;7mM-\[0;10m First File  [0;10;7m^_[0;10m Go To Dir[25;2H[0;10;7mX[0;10m Exit  	[0;10;7mM-W[0;10m WhereIs Next[0;10;7m^V[0;10m Next Page    [0;10;7mM-/[0;10m Last File[K[3;18H[?25h[?0c[1;27H[0;10;7mFile: /var/www/html/info.php[1;71HModified[3d[0;10m<?php[K[4dphpinfo();[5d?>[23d[0;10;7mFile Name to Write: /var/www/html/info.php                                      [24;17H[0;10m    [0;10;7m^T[0;10m To Files         [0;10;7mM-M[0;10m Mac Format      [0;10;7mM-P[0;10m Prepend[K[25;2H[0;10;7mC[0;10m Cancel	    [0;10;7mM-D[0;10m DOS Format      [0;10;7mM-A[0;10m Append          [0;10;7mM-B[0;10m Backup File[23;43H[0;10;7my[0;10m[23;33H[1K [0;10;7m[ Cancelled ][0;10m[K[24;14H[0;10;7m^O[0;10m WriteOut  [0;10;7m^R[0;10m Read File [0;10;7m^Y[0;10m Prev Page [0;10;7m^K[0;10m Cut Text  [0;10;7m^C[0;10m Cur Pos[25;2H[0;10;7mX[0;10m Exit      [0;10;7m^J[0;10m Justify   [0;10;7m^W[0;10m Where Is  [0;10;7m^V[0;10m Next Page [0;10;7m^U[0;10m UnCut Text[0;10;7m^T[0;10m To Spell[6d[23d[0;10;7mFile Name to Write: /var/www/html/info.php                                      [24;14H[0;10m       [0;10;7m^T[0;10m To Files         [0;10;7mM-M[0;10m Mac Format      [0;10;7mM-P[0;10m Prepend[K[25;2H[0;10;7mC[0;10m Cancel           [0;10;7mM-D[0;10m DOS Format      [0;10;7mM-A[0;10m Append          [0;10;7mM-B[0;10m Backup File[K[23;43H[?25l[?1c[1;27H[0;10;7m     DIR: /var/www/html/    [1;71H        [3d.. (parent dir)[4d[0;10m[K[5d[K[23d[K[24;17H[0;10;7m^W[0;10m Where Is     [0;10;7m^Y[0;10m Prev Page    [0;10;7mM-\[0;10m First File  [0;10;7m^_[0;10m Go To Dir[25;2H[0;10;7mX[0;10m Exit  	[0;10;7mM-W[0;10m WhereIs Next[0;10;7m^V[0;10m Next Page    [0;10;7mM-/[0;10m Last File[K[3;18H[?25h[?0c[1;27H[0;10;7mFile: /var/www/html/info.php[1;71HModified[3d[0;10m<?php[K[4dphpinfo();[5d?>[23d[0;10;7mFile Name to Write: /var/www/html/info.php                                      [24;17H[0;10m    [0;10;7m^T[0;10m To Files         [0;10;7mM-M[0;10m Mac Format      [0;10;7mM-P[0;10m Prepend[K[25;2H[0;10;7mC[0;10m Cancel	    [0;10;7mM-D[0;10m DOS Format      [0;10;7mM-A[0;10m Append          [0;10;7mM-B[0;10m Backup File[23;43H[1;71H[39;49m[0;10;7m        [23;31H[0;10m[1K [0;10;7m[ Wrote 4 lines ][0;10m[K[24;14H[0;10;7m^O[0;10m WriteOut  [0;10;7m^R[0;10m Read File [0;10;7m^Y[0;10m Prev Page [0;10;7m^K[0;10m Cut Text  [0;10;7m^C[0;10m Cur Pos[25;2H[0;10;7mX[0;10m Exit      [0;10;7m^J[0;10m Justify   [0;10;7m^W[0;10m Where Is  [0;10;7m^V[0;10m Next Page [0;10;7m^U[0;10m UnCut Text[0;10;7m^T[0;10m To Spell[6d[24d[J[25;80H[25;1H[root@localhost ~]# sudo nano /var/www/html/info.php[1P /var/www/html/info.php[1P /var/www/html/info.php[1P /var/www/html/info.php[1P /var/www/html/info.php[1P/var/www/html/info.php[1P /var/www/html/info.php[1P /var/www/html/info.php[1P /var/www/html/info.php[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P /var/www/html/info.php[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cv /var/www/html/info.php[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ci /var/www/html/info.php
+[1;25r[?25h[?8c[?25h[?0c[27m[24m[0m[H[J[?25l[?1c[25;1H"/var/www/html/info.php" 4L, 21C[1;1H<?php
+phpinfo();
+?>
+
+[1m[34m~                                                                               [6;1H~                                                                               [7;1H~                                                                               [8;1H~                                                                               [9;1H~                                                                               [10;1H~                                                                               [11;1H~                                                                               [12;1H~                                                                               [13;1H~                                                                               [14;1H~                                                                               [15;1H~                                                                               [16;1H~                                                                               [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [24;1H~                                                                               [1;1H[?25h[?0c[?25l[?1c[0m[25;1H[K[25;1H:[?25h[?0cq[?25l[?1c[?25h[?0c[25;1H[K[25;1H[root@localhost ~]# sudo service httpd restart
+Stopping httpd: [60G[[0;32m  OK  [0;39m]
+Starting httpd: httpd: Could not reliably determine the server's fully qualified domain name, using localhost.localdomain for ServerName
+[60G[[0;32m  OK  [0;39m]
+[root@localhost ~]# exit
+exit
+
+Script done on Thu 21 Jul 2016 10:21:00 AM EDT
